@@ -1,10 +1,10 @@
 # My Portfolio
 
 ## Description: 
-this is My portfolio made by using HTML/CSS/JS and Studio-code. 
-I hope to improve it in the coming month 
+This is My portfolio made by using HTML/CSS/JS and Studio-code. 
+I'm planning to improve it in the coming months. 
 ## Features: 
-The design change to fit every screen size. you can click on the projects to know more about them.
+The design change according to screen type. You can click on the projects picture to know more about them.
 ## How to use: 
 visit: https://daviddaill.github.io/portfolio/ 
 or download repository.
