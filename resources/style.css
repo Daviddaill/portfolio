@@ -149,7 +149,7 @@ h1 {
     padding: 0 40px;
     font-size: 60px;
     text-align: center;
-    color: rgb(18, 64, 95)
+    color: rgb(18, 64, 95);
 }
 
 .title p {
@@ -199,6 +199,7 @@ h1 {
 
 .about img {
     height: 250px;
+    border-radius: 8px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -219,148 +220,135 @@ h1 {
 
 }
 
-/*projects*/
-.projects {
-    background-color: rgb(255, 255, 255);
-    height: 800px;
-    display: flex;
+/*project*/
+.projects{
+    padding:60px;
+    display:flex;
     justify-content: center;
     align-items: center;
+    justify-items: center;
+   background-color: white;
+   flex-direction: row-reverse;
+
 }
 
-.projects h2 {
- 
-    text-align: center;
+.projects h2{
     width: 40%;
+    text-align: center;
 }
 
-.project-list {
-    display: flex;
-    justify-content: flex-start;
-    align-items: stretch;
-    flex-wrap: wrap;
-    justify-items: stretch;
-    width: 60%;
-    height: 600px;
-}
-
-.project-card {
-    display: flex;
-    justify-content: centerstrech;
-    justify-items: stretch;
-    align-items: center;
+/* Fixed sidenav, full height */
+.sidenav {
+    display:flex;
     flex-direction: column;
-    border: solid white;
-    width: 50%;
-    height: 50%;
-    object-fit: cover;
+    justify-content:center;
+    width: 60%;
+    z-index: 1;
+    
+    background-color: white;
+    overflow-x: hidden;
+    padding: 20px 40px;
+  }
 
-}
-
-.project-card:hover {
-    cursor: pointer;
-}
-
-
-.project-card h3 {
-    margin-top: 20px;
-    padding: 20px 0;
-
-}
-
-.project-card p {
-    margin-top: 30px;
-    padding: 5px 10px;
-    text-align: center;
-    position: relative;
-    top: 20px 20px;
-}
-
-#project1 {
-    color: rgb(255, 204, 133);
-    background-color: rgb(18, 64, 95);
-
-}
-
-#project2 {
-    color: rgb(18, 64, 95);
-    background-color: rgb(255, 255, 255);
-}
-
-#project3 {
-    color: rgb(18, 64, 95);
-    background-color: rgb(255, 255, 255);
-}
-
-#project4 {
-    color: rgb(18, 64, 95);
-    background-color: rgb(255, 204, 133);
-}
-
-
-.project-image {
-    display: none;
-    margin: 0 auto;
-    width: 80%;
-    height: auto;
-}
-
-.project-image:hover {
-    opacity: .8;
-}
-
-.project-title {
-    text-align: center;
-}
-
-@media only screen and (max-width: 768px) {
-    .projects {
-        display: block;
-        height: 650px;
-    }
   
-
-    .projects h2 {
-
-        text-align: start;
-        width: 100%;
-        padding: 100px 65px 40px ;
-    }
-
-    .project-list {
-        display: flex;
-        justify-content: flex-start;
-        align-items: stretch;
-        flex-wrap: wrap;
-        justify-items: stretch;
-        width: 100%;
-        height: 500px;
-    }
-
-    .project-image {
-        width: 60%;
-
-    }
+  /* Style the sidenav links and the dropdown button */
+ .dropdown-btn,  .dropdown-container p {
+    
+    padding: 20px 10px 15px 40px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    outline: none;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: rgb(255, 173, 67);
+    cursor: pointer;
+  }
+  
+.project-image{
+    width:80%;
 }
+.project-image-catalog{
+display: flex;
+justify-content: center;
+align-items: baseline;
+}
+.project-image-responsive{
+    width:60%;
+    height:auto;
+    padding:20px;
 
+}
+.project-image-responsive-small{
+    width:20%;
+    height: auto;
+    padding:20px;
+}
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    background-color: rgb(18, 64, 95);
+    color: white;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.2), 0 0px 8px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 4px;
+  }
+  .dropdown-container p{
+    color:black;
+    padding: 10px;
+    text-align: center;
+   
+  }
+  .visit-link{
+display:flex; 
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  }
 
-@media only screen and (max-width: 360px) {
-    .projects {
-        height: 1000px;
+  .visit-link a{
+    font-size: 20px;
+    color: #818181;
+    text-decoration: none;
+    padding:20px 20px 5px 20px;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+  
+  /* Some media queries for responsiveness */
+  @media screen and (max-width: 790px) {
+    .projects{
+       flex-direction: column; 
     }
 
-    .project-card {
-        width: 100%;
-        height: 200px;
+    .sidenav {
+        width:100%;
+        padding:10px;
     }
+  }
 
-    .project-image {
-        display: none;
-        margin: 0 auto;
-        width: 40%;
-        height: auto;
-    }
-
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
 }
 
 /*skills*/
@@ -370,10 +358,10 @@ h1 {
     background-color: rgb(249, 231, 198);
     color: rgb(2, 2, 2);
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     align-content: space-around;
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 .skills h2 {
@@ -388,7 +376,7 @@ h1 {
     align-items: center;
     align-content: flex-start;
     flex-wrap: wrap;
-    width: 400px;
+    width: 420px;
 }
 
 .fa-brands,
