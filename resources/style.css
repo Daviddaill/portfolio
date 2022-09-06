@@ -284,8 +284,8 @@ align-items: baseline;
     width:60%;
     height:auto;
     padding:20px;
-
 }
+
 .project-image-responsive-small{
     width:20%;
     height: auto;
@@ -343,6 +343,7 @@ display:flex;
     .sidenav {
         width:100%;
         padding:10px;
+
     }
 
     .projects h2{
