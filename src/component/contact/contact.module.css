@@ -1,0 +1,21 @@
+/* Contact Section */
+.contact{
+   display:flex;
+   align-items: center;
+   gap:10px;
+}
+.contact a{
+   color:#eaeaea;
+   text-decoration: none;
+   font-size: 14px;
+}
+.horizontal{
+   display:flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.contact :hover {
+   color:#8BC53F
+}

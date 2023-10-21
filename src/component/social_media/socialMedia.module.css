@@ -1,0 +1,27 @@
+.iconsContainer{
+   display:flex;
+   justify-content: flex-end;
+   gap:20px
+}
+.vertical{
+   flex-direction: column;
+   justify-content: center;
+}
+
+.iconContainer{
+   list-style-type: none; /* Remove bullets */
+   border-radius: 50%;
+   border:1px solid;
+   color:#eaeaea;
+   padding:3px 6px;
+   margin-top: 5px;
+}
+.iconContainer:hover {
+   border-color: #8BC53F;
+}
+.icon{
+   color:#eaeaea;
+   width:20px;
+   position:relative;
+   top:2px;
+}

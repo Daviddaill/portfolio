@@ -1,0 +1,23 @@
+.button a {
+   padding: 10px;
+   border-radius: 20px;
+   text-decoration: none;
+   font-size: 12px;
+   max-width:180px;
+   text-align: center;
+}
+.button :hover{
+   background-color: #8BC53F;
+   color:black;
+}
+
+/* COLOR THEME  */
+.darkButton a{
+   color:#eaeaea;
+   border:1px solid #eaeaea;
+}
+.brightButton a{
+   color:#5D9943;
+   border:1px solid #5D9943;
+}
+

@@ -1,0 +1,30 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3,h4{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+p, a , td{
+  font-family: 'Poppins', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+a:hover{
+  color:#8BC53F;
+}
+
+.green_text, .title{
+  color:#5D9943;
+}
+
+
+
+
+

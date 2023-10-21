@@ -1,0 +1,10 @@
+.settings_container{
+   display: flex;
+   gap:20px;
+   justify-content: flex-end;
+   align-items: center;
+}
+.vertical{
+   flex-direction: column;
+   justify-content: flex-start;
+}
