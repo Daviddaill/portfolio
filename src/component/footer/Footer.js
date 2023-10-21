@@ -30,15 +30,12 @@ const { darkMode } = useTheme();
           <Contact />
          </div>
       {/* SOCIAL MEDIA */}
-         <div className={`${CSS.rightContainer} ${CSS.container}`}>
+         <div className={`${CSS.container}`}>
             <h4>{footer.social.title}</h4>
             <p className={CSS.subTitle}>
                {footer.social.subtitle}
             </p>
             <SocialMedia />
-         </div>
-         <div className={`${CSS.leftContainer} ${CSS.container}`}>
-
          </div>
          <div className={`${CSS.centerContainer} ${CSS.container}`}>
             <DownloadResume display='dark'/>

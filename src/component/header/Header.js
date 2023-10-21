@@ -49,17 +49,16 @@ function Header() {
    const darkModeClass = darkMode ? CSS.dark_mode : CSS.light_mode;
    const scrollClass = scrolled ? CSS.header_scrolled : CSS.header;
    const menuOpen = isMenuOpen ? CSS.menu_open : CSS.menu_close;
-   const darkMenu= darkMode? CSS.darkMenu:CSS.lightMenu;
-   const menu= `${menuOpen} ${darkMenu}`;
-   let headerMenu ='';
-   if(isMenuOpen && darkMode){
-      headerMenu= CSS.dark_headerMenu
-   } else if(isMenuOpen){
-      headerMenu= CSS.headerMenu
+   const darkMenu = darkMode ? CSS.darkMenu : CSS.lightMenu;
+   const menu = `${menuOpen} ${darkMenu}`;
+   let headerMenu = '';
+   if (isMenuOpen && darkMode) {
+      headerMenu = CSS.dark_headerMenu
+   } else if (isMenuOpen) {
+      headerMenu = CSS.headerMenu
    }
-   
-   // Combine the class names
-   const headerClassName = `${scrollClass} ${darkModeClass} ${headerMenu} `;
+  // Combine the header class name
+   const headerClassName = `${CSS.header} ${scrollClass} ${darkModeClass} ${headerMenu} `
 
    return (
       <header className={headerClassName} >
@@ -97,16 +96,16 @@ function Header() {
             <Settings position='header' />
          </div>
 
-      {/* DROPDOWN MENU ****SMALL SCREENS**** */}
+         {/* DROPDOWN MENU ****SMALL SCREENS**** */}
          {/* Menu Icon */}
          <div
             className={`${CSS.menu_icon} `}
             onClick={toggleMenu}
          >
             {isMenuOpen ? (
-               <AiOutlineClose size={24} color="grey" />
+               <AiOutlineClose size={24}  />
             ) : (
-               <AiOutlineMenu size={24} color="grey" />
+               <AiOutlineMenu size={24}  />
             )}
          </div>
          {/* Dropdown Menu */}

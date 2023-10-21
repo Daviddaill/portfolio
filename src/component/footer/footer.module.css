@@ -13,12 +13,12 @@
 .footer{
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-between;
-   align-items: flex-end;
+   justify-content: space-around;
+   align-items: center;
 }
 .container{
-   width:32%;
-   padding:50px
+padding:20px 50px;
+text-align: center;
 }
 .leftContainer{
    text-align: left;
@@ -26,9 +26,7 @@
 .centerContainer{
    text-align: center;
 }
-.rightContainer{
-   text-align: right;      
-}
+
 
 /* Logo Section */
 .portfolio{
