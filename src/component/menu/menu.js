@@ -1,31 +1,26 @@
 import React, { useState } from 'react';
 import CSS from './menu.module.css';
 //Custom Hooks
-import { useLanguageContent } from '../../assets/content/useLanguageContent';
-import { useTheme } from '../themeContext/ThemeContext';
+import { useLanguageContent } from '../../hooks/useLanguageContent';
 import { Link, useParams } from 'react-router-dom';
-import ThemeToggle from '../themeContext/ThemeToggle';
 import Settings from '../settings/Settings';
 import SocialMedia from '../social_media/SocialMedia';
 import Contact from '../contact/Contact';
 
 
-const Menu = () => {
-  const { header } = useLanguageContent();
+const Menu = ({closeMenu}) => {
+  const { header, language } = useLanguageContent();
   const { home, about, projects, resume } = header.nav;
-  const { lang } = useParams();
-  const language = lang || 'en';
 
   return (
-    <div className={CSS.menu_container}>
-      <table>
+      <table className={CSS.menu_container}>
         <tr>
           <td className={CSS.mainCol}>
             <div className={CSS.nav}>
-              <Link to={`./${language}/home`}>{home}</Link>
-              <Link to={`./${language}/home`}>{about}</Link>
-              <Link to={`./${language}/home`}>{projects}</Link>
-              <Link to={`./${language}/home`}>{resume}</Link>
+              <Link to={`./${language}/home`} onClick={closeMenu}>{home}</Link>
+              <Link to={`./${language}/about`} onClick={closeMenu}>{about}</Link>
+              <Link to={`./${language}/projects`} onClick={closeMenu}>{projects}</Link>
+              <Link to={`./${language}/resume`} onClick={closeMenu}>{resume}</Link>
             </div>
               
           </td>
@@ -43,10 +38,7 @@ const Menu = () => {
             <Contact isHorizontal={true}/>
           </td>
         </tr>
-
       </table>
-
-    </div>
   )
 };
 

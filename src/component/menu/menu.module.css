@@ -3,10 +3,13 @@ table{
    width:100%;
    height: calc(100vh - 50px);
    border-collapse: collapse;
-   border-top:1px solid rgb(249, 248, 248);
+   margin:0;
+   padding:0;
+   border-top:1px solid grey;
+   
 }
  td{
-   padding:20px;
+   padding:20px ;
 }
 
 .nav{
@@ -24,7 +27,8 @@ table{
    vertical-align: top;
    text-align: center;
    border-left:1px solid grey;
-   width:60px
+   width:30px;
+   padding:20px 10px
 }
 .settings, .social_media{
    padding:20px 0;
@@ -33,7 +37,6 @@ table{
    border-top:1px solid grey;
 }
 .toggle{
-
    padding-bottom: 20px;
 }
 
@@ -42,3 +45,11 @@ table{
    border-top:1px solid grey
 }
 
+@media screen and (max-width:400px){
+   .nav{
+      font-size: 40px;
+   }
+   td{
+      padding:20px 0;
+   }
+}

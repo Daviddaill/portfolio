@@ -7,17 +7,16 @@
  .welcomeContainer {  
    width: 100%;
    height: calc(100vh - 50px);
-   /* background-color: rgb(255, 250, 250); */
  }
 
  .nameContainer {
+  width:100%;
    margin:0 auto; 
-   font-size: 0; /* Hide the text, we  control the font size using .name and .jobTitle */
    padding:80px 0 0 40px;
 }
  
  .name {
-   font-size: 80px; /* Adjust the font size as needed */
+   font-size: 10vw; 
    margin-bottom: 0;
  }
  
@@ -25,18 +24,53 @@
    color: #b2b4b2;
    font-family: 'Roboto Condensed', sans-serif;
    font-weight: light;
-   font-size: 74px; 
+   font-size: 8.5vw; 
    line-height: 0.5;
  }
  
  .typeContainer {
    font-size: 18px;
-   width:50%;
+   min-width:50%;
    min-height:140px;
    margin-top: 80px;
    margin-left:40%;
    border-left: 4px solid #5D9943;
    padding: 10px 20px;
+ }
+ @media screen and (max-width:720px){
+  .nameContainer{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .name {
+    font-size: 60px; 
+  }
+  .jobTitle {
+    font-size: 55px; 
+    line-height: 0.7;
+  }
+  .typeContainer {
+    margin-left:30%;
+    padding: 10px 20px;
+    min-height:100px;
+  }
+ }
+ @media screen and (max-width:480px){
+
+  .name {
+    font-size: 60px; 
+     line-height: 1;
+  }
+  .jobTitle {
+    padding-left: 5px;
+    font-size: 30px; 
+    line-height: 0.7;
+  }
+  .typeContainer {
+    margin-left:30px;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
  }
 /* END WELCOME SECTION */
 
@@ -60,6 +94,7 @@
    padding:20px 40px;
    gap: 20px;
 }
+
 .overviewCard:hover{
    cursor: pointer;  
 }
@@ -82,24 +117,19 @@
   font-size: 50px; 
   line-height: 1;
 }
-.overviewDescription{ 
+
+.overview_description{
+  color:black;
   text-align: justify;
   hyphens:auto;
   font-size: 14px;
 }
+ .dark_overview p{
+  color:rgb(210, 210, 210);
+}
 /* END OVERVIEW SECTION */
 
-/* COLOR THEME */
-.dark_mode{
-  background-color: #000000;
-  border-bottom: 0.5px solid rgb(49, 49, 49);
-  color:rgb(187, 187, 187);
-  transition: background-color 0.6s, color 0.6s;
-}
-.light_mode {
-background-color: rgb(255, 250, 250);
- transition: background-color 0.6s, color 0.6s;
-}
+
 
  
 

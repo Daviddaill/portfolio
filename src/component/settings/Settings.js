@@ -1,5 +1,5 @@
 import React from 'react'
-import ThemeToggle from '../themeContext/ThemeToggle'
+import ThemeToggle from '../themeToggle/ThemeToggle'
 import Language from '../language/Language'
 import CSS from './setting.module.css'
 

@@ -1,16 +1,23 @@
-import { useParams } from 'react-router-dom';
+// STYLE
 import CSS from './projects.module.css'
-import {en} from '../../assets/content/english';
-import {fr} from '../../assets/content/french';
+//Custom Hooks
+import { useTheme } from '../../hooks/ThemeContext';
+import { useLanguageContent } from '../../hooks/useLanguageContent';
 
 
-function Projects(){
-   const {lang}=useParams();
-   const projects=  lang==='fr'?  fr.projects: en.projects;
+function Projects() {
+   const { projects} = useLanguageContent()
+   const { theme } = useTheme();
+
 
    return (
-      <div className={CSS.projects}>
-         {projects.title}
+
+      <div className= {`main_container ${CSS.projects} ${theme}`}>
+      {/*  INTRO CONTAINER  */}
+            <div className='intro_container'>
+               <h2 className={`title green_text`}>{projects.title}</h2>
+               <p className={`subtitle`}>David DAILLERE</p>
+            </div>
       </div>
    )
 }

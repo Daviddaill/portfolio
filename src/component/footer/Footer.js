@@ -6,18 +6,19 @@ import DownloadResume from '../resume/DownloadResume';
 import logo from '../../assets/images/logo/d-high-resolution-logo-color-on-transparent-background.png'
 
 //Custom Hooks
-import{ useLanguageContent } from '../../assets/content/useLanguageContent';
-import { useTheme } from '../themeContext/ThemeContext';
+import{ useLanguageContent } from '../../hooks/useLanguageContent';
+
 import Settings from '../settings/Settings';
 import SocialMedia from '../social_media/SocialMedia';
 import Contact from '../contact/Contact';
+import { useTheme } from '../../hooks/ThemeContext';
 
 function Footer() {
 const {footer}= useLanguageContent();
 const { darkMode } = useTheme();
-
+const theme= darkMode? CSS.dark_mode: CSS.light_mode
    return (
-      <footer className={darkMode ? `${CSS.footer} ${CSS.dark_mode}` : `${CSS.footer} ${CSS.light_mode}`}>
+      <footer className={`${CSS.footer} ${theme}`}>
       {/* LOGO */}
          <div className={`${CSS.leftContainer} ${CSS.container}`}>
             <img src={logo} alt='logo david' width="30px" height="30px"></img>

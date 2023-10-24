@@ -2,9 +2,13 @@
    padding: 10px;
    border-radius: 20px;
    text-decoration: none;
-   font-size: 12px;
+   font-size: 14px;
    max-width:180px;
    text-align: center;
+   font-weight:500;
+   display:flex;
+   justify-content: center;
+   align-items: center;
 }
 .button :hover{
    background-color: #8BC53F;
@@ -17,7 +21,7 @@
    border:1px solid #eaeaea;
 }
 .brightButton a{
-   color:#5D9943;
+   color:#0b0b0b;
    border:1px solid #5D9943;
 }
 

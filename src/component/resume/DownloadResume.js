@@ -1,29 +1,29 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 // style
 import CSS from './downloadResume.module.css';
 // Assets
-import { AiOutlineDownload } from "react-icons/ai";
-import resumeFr from '../../assets/resume_fr.pdf'
-import resumeEn from '../../assets/resume_en.pdf'
+import { BiSolidDownload } from "react-icons/bi";
+import resumeFr from '../../assets/david_daillere_resume_fr.pdf'
+import resumeEn from '../../assets/david_daillere_resume_en.pdf'
 //Custom Hooks
-import { useLanguageContent } from '../../assets/content/useLanguageContent';
+import { useLanguageContent } from '../../hooks/useLanguageContent';
+import { useTheme } from '../../hooks/ThemeContext';
 
 export default function DownloadResume({ display }) {
-  const { resume } = useLanguageContent();
-  const { lang } = useParams();
-  const language = lang || 'en';
+  const { resume, language } = useLanguageContent();
+  const {darkMode} = useTheme();
   const pdf = language === 'fr' ? resumeFr : resumeEn;
 
   return (
-    <div className={display === 'dark' ? `${CSS.darkButton} ${CSS.button}` : `${CSS.brightButton} ${CSS.button}`}>
+    <div className={display === 'dark'|| darkMode ? `${CSS.darkButton} ${CSS.button}` : `${CSS.brightButton} ${CSS.button}`}>
       <a
         href={pdf}
         download
         target="_blank"
-        style={{ maxWidth: "250px" }}
+        style={{ maxWidth: "250px" }
+      }
       >
-        <AiOutlineDownload />
+        <BiSolidDownload size='1.5em'/>
         &nbsp; {resume.download}
       </a>
     </div>

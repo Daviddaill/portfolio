@@ -1,7 +1,7 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
  //Custom Hooks
- import{ useLanguageContent } from '../../assets/content/useLanguageContent';
+ import{ useLanguageContent } from '../../hooks/useLanguageContent';
 
 function Type() {
   const {home}= useLanguageContent();

@@ -23,7 +23,7 @@ export const en={
       <p> Together, let's create the future!</p>`
    },
    about:{
-      title: 'ABOUT',
+      title: 'ABOUT ME',
       description:'Front-end developer with a sound and lighting tech background,find out all there is to know about me...',
    },
    projects:{

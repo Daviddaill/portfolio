@@ -1,14 +1,15 @@
 import { Outlet } from "react-router-dom";
 import Header from "./component/header/Header";
 import Footer from "./component/footer/Footer";
-import { ThemeProvider } from "./component/themeContext/ThemeContext";
-import './component/themeContext/theme.css'
+
+import './App.css';
+import { ThemeProvider } from "./hooks/ThemeContext";
 
 function AppLayout() {
 
    return (
       <ThemeProvider>
-      <div>
+      <div className='app'>
          <Header />
          <main>
             <Outlet />

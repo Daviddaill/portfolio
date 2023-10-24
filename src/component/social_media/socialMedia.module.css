@@ -1,6 +1,6 @@
 .iconsContainer{
    display:flex;
-   justify-content: flex-end;
+   justify-content: center;
    gap:20px
 }
 .vertical{
@@ -10,8 +10,6 @@
 
 .iconContainer{
    list-style-type: none; /* Remove bullets */
-   border-radius: 50%;
-   border:1px solid;
    color:#eaeaea;
    padding:3px 6px;
    margin-top: 5px;
@@ -22,6 +20,4 @@
 .icon{
    color:#eaeaea;
    width:20px;
-   position:relative;
-   top:2px;
 }
