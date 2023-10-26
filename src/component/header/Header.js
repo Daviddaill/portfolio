@@ -72,7 +72,7 @@ function Header() {
          <div className={CSS.nav_bar}>
             <div className={CSS.logoContainer}>
                <img src={logo} alt='logo David' width='30' height='30'></img>
-               <h1 className={CSS.name}>  Portfolio</h1>
+               <h1 className={CSS.name}> Portfolio</h1>
             </div>
             {/* NAV BAR ****BIG SCREEN*** */}
             <nav className={CSS.nav}>

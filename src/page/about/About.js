@@ -24,7 +24,9 @@ function About() {
          <div className={CSS.book_container}>
          <Book />
          </div>
-         
+         <div>
+            
+         </div>
       </div>
    )
 }

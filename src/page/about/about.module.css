@@ -1,0 +1,15 @@
+.book_container{
+   padding:80px 20px
+}
+
+@media screen and (max-width:840px){
+   .book_container{
+      max-width:400px;
+      margin: 0 auto;
+   }
+}
+@media screen and (max-width:400px){
+   .book_container{
+      padding:80px 5px
+   }
+}
