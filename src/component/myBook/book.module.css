@@ -90,7 +90,7 @@
 }
 
 .arrow_icon {
-  color: rgb(201, 196, 175);
+  color: rgb(142, 136, 109);
   animation: blink 1.5s infinite; /* 1s is the duration, "infinite" makes it loop */
 }
 

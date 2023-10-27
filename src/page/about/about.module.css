@@ -1,6 +1,9 @@
 .book_container{
    padding:80px 20px
 }
+.section{
+   margin:180px 0;
+}
 
 @media screen and (max-width:840px){
    .book_container{

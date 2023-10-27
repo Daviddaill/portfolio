@@ -7,14 +7,16 @@ import { useLanguageContent } from '../../hooks/useLanguageContent';
 
 import DownloadResume from '../../component/resume/DownloadResume';
 import { useTheme } from '../../hooks/ThemeContext';
-
+//icons
+import {AiOutlineDown} from 'react-icons/ai'
+import NextPage from '../../component/nextPage/NextPage';
 
 //Component
 
 function Home() {
    const { home, about, projects, resume, language} = useLanguageContent()
    const {theme, darkMode} = useTheme();
-
+   const nextPage= language==='fr'?'À Propos': 'About Me'
       return (
    
       <div className= {`${CSS.home} ${theme}`}>
@@ -28,11 +30,16 @@ function Home() {
                <Type className={CSS.type} />
             </div>
          </div>
+         <div className={CSS.next}>
+            <NextPage link='about' pageName={nextPage}/>
+
+         </div>
       {/*  OVERVIEW CONTAINER  */}
          <div className={darkMode? `${CSS.overview} ${CSS.dark_overview}`:`${CSS.overview} ${CSS.light_overview}`}>
             <Link
                to={`/${language}/about`}
                className={`${CSS.about} ${CSS.overviewCard}`}>
+              
                <h3 className={`${CSS.overviewTitles} title`}>
                   {about.title}
                </h3>

@@ -6,11 +6,18 @@ import CSS from './about.module.css'
 import { useTheme } from '../../hooks/ThemeContext';
 import { useLanguageContent } from '../../hooks/useLanguageContent';
 import Book from '../../component/myBook/Book';
+import TeckStack from '../../component/skillset/TeckStack';
+import ToolStack from '../../component/skillset/ToolStack';
+import Github from '../../component/github/Github';
+import NextPage from '../../component/nextPage/NextPage';
+import Hobbies from '../../component/hobbies/Hobbies';
+import Testimonials from '../../component/testimonials/Testimonials';
 
 
 function About() {
-   const { about } = useLanguageContent()
+   const { about, language } = useLanguageContent()
    const { theme } = useTheme();
+   const projectsPage= language==='fr'? 'Mes Projets': 'My Projects'
 
 
    return (
@@ -24,9 +31,23 @@ function About() {
          <div className={CSS.book_container}>
          <Book />
          </div>
-         <div>
-            
+         <div className= {CSS.section}>
+            <TeckStack />
+            <ToolStack />
+         </div >
+         <div className= {CSS.section}>
+            <Github />
          </div>
+         <div className={CSS.section}>
+            <Hobbies />
+         </div>
+         <div className={CSS.section}>
+         <Testimonials />
+         </div>
+         <div className={CSS.section}>
+            <NextPage link='projects' pageName={projectsPage} />
+         </div>
+         
       </div>
    )
 }
