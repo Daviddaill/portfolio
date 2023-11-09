@@ -19,14 +19,13 @@ function App() {
       <Routes>
         <Route path='/' element={<AppLayout />}>
           {/* Route for other languages */}
-          <Route path='/:lang' element={<Home />} />
-          <Route path='/:lang/home' element={<Home />} />
-          <Route path='/:lang/about' element={<About />} />
-          <Route path='/:lang/projects' element={<Projects />} />
-          <Route path='/:lang/resume' element={<Resume />} />
-          <Route path='/:lang/menu' element={<Menu />} />
-          {/* Redirect to English for the root path */}
-          <Route index element={<Navigate to='/en' replace />} />
+          <Route path=':lang/*' element={<Home />} />
+          <Route path=':lang/about' element={<About />} />
+          <Route path=':lang/projects' element={<Projects />} />
+          <Route path=':lang/resume' element={<Resume />} />
+          <Route path=':lang/menu' element={<Menu />} />
+  
+           <Route path='/' element={<Home />} />
         </Route>
       </Routes>
     </BrowserRouter>
