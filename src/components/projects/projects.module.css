@@ -1,0 +1,168 @@
+.projects_title {
+   text-align: center;
+   padding: 20px 0;
+}
+
+.projects_container {
+   border-bottom: 1px solid #9b9b9b41;
+}
+
+/* PROJECT CARD */
+.card {
+   display: flex;
+   align-items: center;
+   gap:5px;
+   border-radius: 8px;
+}
+
+.image_container {
+   width:50%;
+}
+
+.description_container {
+   height: 100%;
+   width: 50%;
+   padding: 0 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content:center;
+   align-items:center ;
+}
+
+
+.title {
+   padding-bottom: 20px;
+}
+
+.text {
+   text-align: justify;
+   hyphens: auto;
+   font-size: 12px;
+}
+
+
+.buttons {
+   margin: 20px 0;
+   gap: 20px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.button a {
+   padding: 10px;
+   border-radius: 20px;
+   text-decoration: none;
+   font-size: 10px;
+   max-width: 180px;
+   text-align: center;
+   font-weight: 500;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.button :hover {
+   background-color: #8BC53F;
+   color: black;
+}
+
+/* COLOR THEME  */
+.darkButton a {
+   color: #eaeaea;
+   border: 1px solid #eaeaea;
+}
+
+.brightButton a {
+   color: #0b0b0b;
+   border: 1px solid #5D9943;
+}
+
+@media screen and (max-width:720px) {
+   .card {
+      flex-direction: column;
+      width: 100%;
+   }
+
+    .description_container {
+      height: 100%;
+      width: 100%;
+   }
+   .image_container{
+      width:70%;
+   }
+}
+
+
+/* PROJECT CARD END */
+
+
+/* HORIZONTAL GALLERY */
+.horizontal_gallery {
+   gap: 20px;
+   display: flex;
+   align-items: center;
+   overflow: hidden;
+   position: relative;
+   width: 100%;
+   padding: 0 20px;
+}
+
+.gallery_container {
+   display: flex;
+   overflow-x: scroll;
+   scroll-snap-type: x mandatory;
+   scrollbar-width: none;
+   -ms-overflow-style: none;
+
+}
+
+.card {
+   margin: 10px;
+
+   width: 75%;
+   flex-shrink: 0;
+   scroll-snap-align: start;
+   border: 1px solid #a9a9a93c;
+   padding: 16px;
+   margin-right: 8px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.scroll_button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   font-size: 24px;
+   background-color: #f5f5f5;
+   width: 40px;
+   height: 40px;
+   transition: background-color 0.2s;
+
+   &:hover {
+      background-color: #e5e5e5;
+   }
+}
+
+.left {
+   border-top-right-radius: 8px;
+   border-bottom-right-radius: 8px;
+}
+
+.right {
+   border-top-left-radius: 8px;
+   border-bottom-left-radius: 8px;
+}
+
+.gallery-container::-webkit-scrollbar {
+   display: none;
+}
+
+@media screen and (max-width:400px) {
+   .card {
+      width: 100%;
+      padding: 5px;
+   }
+
+}

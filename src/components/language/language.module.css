@@ -1,0 +1,43 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #dcdbdbe6;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 20;
+  border-radius: 2px;
+}
+
+/* place the drop down menu according to it's position on the page */
+.header_position {
+  right: -10px
+}
+
+.footer_position {
+  bottom: 20px;
+  right: -8px;
+}
+
+.menu_position {
+  top: -25px;
+  right: 20px;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+.flagContainer {
+  padding: 8px;
+  display: block;
+}
+
+.flagContainer:hover {
+  background-color: #f9f9f9;
+  cursor: pointer;
+}

@@ -41,13 +41,50 @@ export const en = {
             `,
                `David was prompt in attending all team calls and demonstrated clear and precise communication regarding his commitments and deliverables. He proactively addressed any challenges he faced, ensuring expectations were realigned as needed. I would not hesitate to engage David for future projects and can personally vouch for his excellence and professionalism.`,
             ],
-         }
+         },
       ],
 
    },
    projects: {
       title: 'PROJECTS',
       description: 'This is where I showcase my recent work, personal projects, case studies, and client testimonials...',
+      recentWork: {
+         uppaTop: {
+            company: 'UppaTop',
+            title: 'Insurance Contract Automation',
+            text: `Conversion of over 300 designs into Responsive Web Pages. Create page and components templates for better efficiency. Use of Html and CSS, with great attention to detail.
+            Quick analysis of html structure and effective CSS styling.`,
+         },
+         ignite: {
+            company: 'Ignite',
+            title: 'online shop',
+            text: `🕯️ Browse, buy, and enjoy the comforting ambiance of your favorite candles. 🛒💳 Explore a wide range of candle scents and styles, secure payment portal 💰, and personalized login page. Built with Firebase 🔥 and React ⚛️ 🕯️`
+         },
+         giteBleu: {
+            company: 'Ô Gîte Bleu',
+            title: 'Business Website',
+            text: `Explore this idyllic property, view captivating photos, check availability, and grab exclusive special offers. Get in touch and unlock a memorable vacation! 🏡✨`
+         },
+      },
+      projects:{
+         reddit: {
+            title: 'Reddit Lite',
+            text: '🔍 RedditLite: Search, explore, and read articles effortlessly. Discover content by keywords or categories, preview results, and enjoy a responsive experience with React and Redux. Simplify your reading journey today! 📚📰🚀'
+         },
+         booking: {
+            title: 'Booking Management - The App',
+            text: 'A simple desktop app to help short-term rental home owners manage their business. Record reservations, Create contracts, invoices, e-mails and customer logbook automatically, Access statistics and turnover.'
+         },
+         gite:{
+            title: 'Booking Management - The Website',
+            text: 'Visit the website to explore my project: a desktop app I created to simplify vacation rental management. 🏡💼🌐 '
+         },
+         pho:{
+            title: 'Pho Restaurant',
+            text: `A Simple and Enjoyable Menu Page
+                   Select your meal with ease and pleasure.`,
+         },
+      },
    },
    resume: {
       title: 'RESUME',

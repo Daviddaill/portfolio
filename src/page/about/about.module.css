@@ -1,8 +1,11 @@
 .book_container{
-   padding:80px 20px
+   padding:0 20px
 }
-.section{
-   margin:180px 0;
+.main_image_container{
+   max-height: 80%;
+}
+.main_image{
+   height: calc(65vh)
 }
 
 @media screen and (max-width:840px){
@@ -13,6 +16,6 @@
 }
 @media screen and (max-width:400px){
    .book_container{
-      padding:80px 5px
+      padding:0 5px
    }
 }
