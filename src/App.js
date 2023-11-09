@@ -1,4 +1,4 @@
-import { Route, BrowserRouter, Routes, Navigate } from 'react-router-dom';
+import { Route, BrowserRouter, Routes, Navigate, HashRouter } from 'react-router-dom';
 //Style
 import './App.css';
 //Layout
@@ -14,7 +14,7 @@ import ScrollToTop from './components/scrollTop/ScrollTop';
  
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       <Routes>
         <Route path='/' element={<AppLayout />}>
@@ -29,7 +29,7 @@ function App() {
           <Route index element={<Navigate to='/en' replace />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
