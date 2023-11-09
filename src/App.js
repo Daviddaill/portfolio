@@ -19,11 +19,11 @@ function App() {
       <Routes>
         <Route path='/' element={<AppLayout />}>
           {/* Route for other languages */}
-          <Route path=':lang/*' element={<Home />} />
-          <Route path=':lang/about' element={<About />} />
-          <Route path=':lang/projects' element={<Projects />} />
-          <Route path=':lang/resume' element={<Resume />} />
-          <Route path=':lang/menu' element={<Menu />} />
+          <Route path='#/:lang/*' element={<Home />} />
+          <Route path='#/:lang/about' element={<About />} />
+          <Route path='#/:lang/projects' element={<Projects />} />
+          <Route path='#/:lang/resume' element={<Resume />} />
+          <Route path='#/:lang/menu' element={<Menu />} />
 
           <Route path='/' element={<Home />} />
         </Route>
