@@ -11,6 +11,8 @@ import Resume from './page/resume/Resume';
 //Components
 import Menu from './components/menu/menu'
 import ScrollToTop from './components/scrollTop/ScrollTop';
+import Solutions from './page/solutions/Solutions';
+import Pricing from './page/pricing/Pricing';
  
 function App() {
   return (
@@ -21,9 +23,10 @@ function App() {
           {/* Route for other languages */}
           <Route path=':lang' element={<Home />} />
           <Route path=':lang/home' element={<Home />} />
-          <Route path=':lang/about' element={<About />} />
+          <Route path=':lang/solutions' element={<Solutions />} />
+          <Route path=':lang/pricing' element={<Pricing />} />
           <Route path=':lang/projects' element={<Projects />} />
-          <Route path=':lang/resume' element={<Resume />} />
+          <Route path=':lang/about' element={<About />} />
           <Route path=':lang/menu' element={<Menu />} />
           {/* Redirect to English for the root path */}
           <Route index element={<Navigate to='/en' replace />} />

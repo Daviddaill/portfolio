@@ -9,24 +9,32 @@ import CSS from './projects.module.css'
 HorizontalGallery will create a ProjectCard for each  element of the given array:
 - Website, github and company are Optional and will not break if not given
 */
-export default function ProjectCard({ img, title, text, website, github, company }) {
+export default function ProjectCard({ img, title, text, website, github, company, features }) {
    const { darkMode } = useTheme();
    const { language } = useLanguageContent();
    const websiteTitle = language === 'fr' ? 'Site Internet' : 'Website'
- 
+
    return (
       <div className={CSS.card}>
          <div className={CSS.image_container}>
-            <img className={CSS.image} src={img} width='100%'  alt='project screenshot'/>
+            <img className={CSS.image} src={img} width='100%' alt='project screenshot' />
          </div>
          <div className={CSS.description_container}>
             <div className={CSS.text_container}>
                {company &&
-                  <h3 className='green_text' >
+                  <h3 className={CSS.title} >
                      {company}
                   </h3>}
-               <h4 className={CSS.title}>{title}</h4>
+               <h4 className={`${CSS.subtitle} primary`}>{title}</h4>
                <p className={CSS.text}>{text}</p>
+               {
+                  features &&
+                  <ul >
+                     {features.map((feature, index) => (
+                        <li key={index} className={CSS.features}>{feature}</li>
+                     ))}
+                  </ul>
+               }
             </div>
             <div className={CSS.link_Container}>
                {/* BUTTONS */}

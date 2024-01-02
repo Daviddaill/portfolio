@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import ProjectCard from './ProjectCard';
 import CSS from './projects.module.css';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import { Carousel } from 'react-bootstrap'; // Import Carousel component from react-bootstrap
 
 /*
 - To add a new Category, create a new component and add HorizontalGallery and a array of projects Information
@@ -9,18 +11,25 @@ import CSS from './projects.module.css';
  img, title, and text are mandatory. 
 
 */
-const HorizontalGallery = ({ projects }) => {
+const HorizontalGallery = ({ projects, className, variant,GalleryTitle }) => {
   const containerRef = useRef(null);
  
   return (
-    <div className={CSS.horizontal_gallery}>
-      <div className={CSS.gallery_container} ref={containerRef}>
+      <div className={`${className} ${CSS.caroussel}`}>
+       <h2 className={CSS.projects_title}>{GalleryTitle}</h2>
+      
+      <Carousel variant={variant} as="div" >
+       
         {projects.map((project, index) => (
-          <ProjectCard key={index} {...project} />
-        ))}
+          <Carousel.Item className={CSS.carousel_item}>
+            <ProjectCard key={index} {...project}   />
+          </Carousel.Item> 
+        )
+        )}
+      </Carousel>
       </div>
-    </div>
-  );
-};
+    );
+  };
+
 
 export default HorizontalGallery;

@@ -9,32 +9,30 @@ import Section from '../../components/section/Section';
 import Works from '../../components/projects/Works';
 import PersonalProjects from '../../components/projects/PersonalProjects';
 import NextPage from '../../components/nextPage/NextPage';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import { Carousel } from 'react-bootstrap';
+import PageTitle from '../../components/pageTitle/PageTitle';
 
 function Projects() {
    const { projects, language } = useLanguageContent()
-   const { theme } = useTheme();
-   const resumePage = language === 'fr' ? 'CV' : 'Resume'
- 
+   const { theme, darkMode } = useTheme();
+   const aboutPage = language === 'fr' ? 'A Propos' : 'About Me'
+   const themeName = darkMode ? CSS.dark_name : CSS.light_name;
+
    return (
-      <div className={`main_container ${CSS.projects} ${theme}`}>
-         {/*  Intro Container  */}
-         <div className='intro_container'>
-            <div className={CSS.image_container}>
-               <Gallery />
-            </div>
-            <div className='title_container'>
-               <h2 className={`title green_text`}>{projects.title}</h2>
-               <p className={`subtitle`}>David Daillère</p>
-            </div>
-         </div>
+      <div className={`${theme}`}>
+         <PageTitle
+            title={projects.title}
+            subtitle={projects.subtitle}
+            description={projects.description} />
          {/*  Intro Container: End  */}
          {/*  Projects Gallery  */}
          <Section>
-            <Works />
-            <PersonalProjects />
+            <Works className={`bg_color6 color5`} />
+            <PersonalProjects className={`bg_color2 color5`} />
          </Section>
          <Section>
-            <NextPage link='resume' pageName={resumePage} />
+            <NextPage link='about' pageName={aboutPage} />
          </Section>
          {/*  Projects Gallery: end */}
       </div>

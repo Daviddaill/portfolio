@@ -5,11 +5,11 @@ import { useLanguageContent } from '../../hooks/useLanguageContent';
 //Components
 import DownloadResume from '../../components/resume/DownloadResume'
 //Assets
-import resumeFr from '../../assets/david_daillere_resume_fr.pdf'
-import resumeEn from '../../assets/david_daillere_resume_en.pdf'
-import imageEn from '../../assets/resume_en.png'
-import imageFr from '../../assets/resume_fr.png'
- 
+import resumeFr from '../../assets/cv_david_daillere.pdf'
+import resumeEn from '../../assets/resume_david_daillere.pdf'
+import imageEn from '../../assets/resume.png'
+import imageFr from '../../assets/cv.png'
+
 function Resume() {
    const { resume, language } = useLanguageContent()
    const { theme } = useTheme();
@@ -17,15 +17,10 @@ function Resume() {
    const resumeImg = language === 'fr' ? imageFr : imageEn;
 
    return (
-      <div className={` ${CSS.resume_page} ${theme}`}>       
+      <div className={` ${CSS.resume_page} ${theme}`}>
          {/*  Intro Container  */}
-         <div className={CSS.intro_container}>
-            <div className={CSS.title_container}>
-               <h2 className={`title  ${CSS.title}`}>{resume.title}</h2>
-               <p className={`subtitle ${CSS.subtitle}`}>David DAILLERE</p>
-               <DownloadResume />
-            </div>
-         </div>
+
+         <DownloadResume />
 
          {/*  Resume Container  */}
          <div className={CSS.resume_container}>

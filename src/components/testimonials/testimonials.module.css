@@ -1,66 +1,91 @@
-.light {
-   color: rgb(140, 113, 121);
+.dark {
+   color: rgb(201, 201, 201);
 }
 
-.dark {
-   color: rgb(223, 206, 206);
+.light {
+   color: white;
 }
-.testimonials_container{
-   margin: 40px 0;
-}
-.testimonial {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   text-align: center;
-   max-width: 600px; 
-   margin: 20px auto;
-   padding:0 20px 20px 20px;
- }
- .title{
-   width:100%;
+
+
+.title {
+   width: 100%;
    text-align: center;
    padding-bottom: 40px;
- }
- 
- .testimonial_content {
-   display: flex;
-   align-items: center;
-   text-align: justify;
- }
- 
- .quote_left {
-   display: inline-block;
-   margin-right: 10px;
-   align-self: flex-start;
- }
- 
- .quote_content {
-   flex: 1;
-   font-style: italic;
-   font-size: 14px;
-   padding:10px 0;
- }
- 
- .quote_right {
-   display: inline-block;
-   margin-left: 10px; 
-   align-self: flex-end;
- }
-
-.testimonial_author{
-   font-size: 14px;
-   padding:5px 40px;
-   align-self: flex-start;
 }
 
-@media screen and (max-width: 500px){
-   .testimonial_content{
-      padding:10px 0;
+
+.testimonials_container {
+
+   min-height: 450px;
+   padding: 150px 40px;
+}
+
+.testimonial_content {
+   text-align: center;
+   margin: 0 auto;
+}
+
+.carousel_item_container {
+   padding: 40px 100px;
+   width: 100%;
+   margin: 0 auto;
+}
+
+.testimonial_content {
+   padding: 0px 20px;
+}
+
+
+
+.quote_content {
+   flex: 1;
+   text-align: justify;
+   font-size: 14px;
+   padding: 10px 0;
+}
+
+.quote_right {
+   float: right;
+}
+
+.testimonial_author {
+   font-size: 18px;
+   padding: 5px 40px;
+   align-self: flex-start;
+
+}
+@media screen and (max-width: 720px) {
+   .testimonials_container {
+      min-height: 480px;
+      padding: 100px 0px;
+   }
+   .carousel_item_container {
+      padding: 20px 60px;
+      margin: 0 auto;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .testimonial_content {
+      padding: 10px 0;
       font-size: 12px;
    }
-   .testimonial_author{
-      font-size: 12px;
-      padding:5px 0;
+
+   .testimonial_author {
+      font-size: 13px;
+      padding: 10px 0;
    }
+
+
+   .testimonials_container {
+      min-height: 450px;
+      padding: 100px 0px;
+   }
+
+   .testimonial_content {
+      text-align: center;
+      margin: 0 auto;
+   }
+
+ 
 }

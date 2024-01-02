@@ -23,7 +23,6 @@ export default function Hobbies() {
    const { trekking, surfing, photography, reading, theater } = about.hobbies;
    return (
       <div className={CSS.container}>
-         <h2 className={`green_text ${CSS.title}`}>{title}</h2>
          <div className={`${theme} ${CSS.icons}`}>
             <p className={CSS.hobby}>
                <GiMountains size='25px' /> {trekking}

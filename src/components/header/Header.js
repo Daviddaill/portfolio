@@ -83,20 +83,24 @@ function Header() {
                   {header.nav.home}
                </NavLink>
                <NavLink
-                  to={`${language}/about`}
+                  to={`${language}/solutions`}
                   className={({ isActive }) => isActive ? CSS.isActive : CSS.isInactive}>
-                  {header.nav.about}
+                  {header.nav.solutions}
                </NavLink>
+               {/* <NavLink
+                  to={`${language}/pricing`}
+                  className={({ isActive }) => isActive ? CSS.isActive : CSS.isInactive}>
+                  {header.nav.pricing}
+               </NavLink> */}
                <NavLink
                   to={`${language}/projects`}
                   className={({ isActive }) => isActive ? CSS.isActive : CSS.isInactive}>
                   {header.nav.projects}
                </NavLink>
                <NavLink
-                  to={`${language}/resume`}
-                  className={({ isActive }) => isActive ? CSS.isActive : CSS.isInactive}
-               >
-                  {header.nav.resume}
+               to={`${language}/about`}
+                  className={({ isActive }) => isActive ? CSS.isActive : CSS.isInactive}>
+                  {header.nav.about}
                </NavLink>
             </nav>
             {/* SETTINGS  ***BIG SCREEN*** */}

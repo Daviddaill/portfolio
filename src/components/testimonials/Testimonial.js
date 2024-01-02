@@ -1,28 +1,30 @@
 import React from 'react';
-import { ImQuotesLeft, ImQuotesRight } from 'react-icons/im';
+import { ImQuotesLeft } from 'react-icons/im';
 import CSS from './testimonials.module.css';
+import { useTheme } from '../../hooks/ThemeContext';
+
  
 /*
 A single testimonial component, used by Testimonials, 
 New testimonials are automatically added from the content file by Testimonials.
 */
 const Testimonial = ({ author, content }) => {
+  const {darkMode}= useTheme();
+  const theme= darkMode? CSS.dark: CSS.light;
   return (
     <div className={CSS.testimonial}>
-      <div className={CSS.testimonial_content}>
-        <div className={CSS.quote_left}>
-          <ImQuotesLeft size="20px" className='green_text' />
+      <div className={`${CSS.testimonial_content} ${CSS.theme} `}>
+        <div className={`${CSS.quote_left} tertiary`}>
+          <ImQuotesLeft size="40px" className='tertiary' />
         </div>
         <div className={CSS.quote_content}>
           {content.map((paragraph, idx) => (
             <p key={idx} style={{ textIndent: '20px' }}>{paragraph} </p>
           ))}
         </div>
-        <div className={CSS.quote_right}>
-          <ImQuotesRight size="20px" className={`green_text ${CSS.right_quote}`} />
-        </div>
+
       </div>
-      <p className={`green_text ${CSS.testimonial_author}`}>- {author}</p>
+      <p className={`tertiary ${CSS.testimonial_author}`}>- {author}</p>
     </div>
   );
 };

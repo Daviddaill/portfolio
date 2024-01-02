@@ -7,6 +7,12 @@
 .main_image{
    height: calc(65vh)
 }
+.thankyou_text{
+   max-width:850px;
+   margin:0 auto;
+   text-align:justify;
+   font-size: 20px;
+}
 
 @media screen and (max-width:840px){
    .book_container{
@@ -17,5 +23,8 @@
 @media screen and (max-width:400px){
    .book_container{
       padding:0 5px
+   }
+   .thankyou_text{
+      padding:0 20px;
    }
 }

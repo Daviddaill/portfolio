@@ -10,28 +10,31 @@ import phoImg from '../../assets/images/projects/pho.png'
 import giteImg from '../../assets/images/projects/gite.png'
 
 
-export default function PersonalProjects() {
+export default function PersonalProjects({variant, className}) {
 
    const { projects, language } = useLanguageContent()
-   const myProjects = language === 'fr' ? `Mes Projets` : 'My Projects';
+   const myProjects = language === 'fr' ? `Projets Personnels` : 'Personal Work';
    const { booking, gite, reddit, pho } = projects.projects
     
    const projectsList = [
       {
          img: bookingImg ,
+         company: booking.company,
          title: booking.title ,
          text: booking.text ,
          github: "https://github.com/Daviddaill/Booking-Management-System",
       },
       {
          img: giteImg ,
+         company: gite.company,
          title: gite.title ,
          text: gite.text ,
          github: "https://github.com/Daviddaill/gerer-mon-gite",
-         website:"https://github.com/Daviddaill/gerer-mon-gite",
+         website:"https://daviddaill.github.io/gerer-mon-gite/index.html",
       },
       {
          img: redditImg ,
+         company: reddit.company,
          title: reddit.title ,
          text: reddit.text ,
          github: "https://github.com/Daviddaill/Reddit-Lite",
@@ -39,6 +42,7 @@ export default function PersonalProjects() {
       },
       {
          img: phoImg ,
+         company: pho.company,
          title: pho.title ,
          text: pho.text ,
          website:"https://daviddaill.github.io/Pho-restaurant/",
@@ -48,8 +52,12 @@ export default function PersonalProjects() {
    
    return (
       <div className={CSS.projects_container}>
-         <h2 className={CSS.projects_title}>{myProjects}</h2>
-         <HorizontalGallery projects={projectsList } />
+         <HorizontalGallery 
+         projects={projectsList }
+         variant={variant}
+         className={className}
+         GalleryTitle={myProjects} 
+          />
       </div>
    )
 }

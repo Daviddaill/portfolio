@@ -11,7 +11,7 @@ import Contact from '../contact/Contact';
 
 const Menu = ({ closeMenu }) => {
   const { header, language } = useLanguageContent();
-  const { home, about, projects, resume } = header.nav;
+  const { home, about, projects, solutions, pricing } = header.nav;
 
   return (
     <table className={CSS.menu_container}>
@@ -20,9 +20,10 @@ const Menu = ({ closeMenu }) => {
           <td className={CSS.mainCol}>
             <div className={CSS.nav}>
               <Link to={`./${language}/home`} onClick={closeMenu} className={CSS.nav_link}>{home}</Link>
-              <Link to={`./${language}/about`} onClick={closeMenu} className={CSS.nav_link}>{about}</Link>
+              <Link to={`./${language}/solutions`} onClick={closeMenu} className={CSS.nav_link}>{solutions}</Link>
+              {/* <Link to={`./${language}/pricing`} onClick={closeMenu} className={CSS.nav_link}>{pricing}</Link> */}
               <Link to={`./${language}/projects`} onClick={closeMenu} className={CSS.nav_link}>{projects}</Link>
-              <Link to={`./${language}/resume`} onClick={closeMenu} className={CSS.nav_link}>{resume}</Link>
+              <Link to={`./${language}/about`} onClick={closeMenu} className={CSS.nav_link}>{about}</Link>
             </div>
 
           </td>

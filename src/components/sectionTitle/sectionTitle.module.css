@@ -1,0 +1,32 @@
+
+.title_container{
+   text-align: center;
+   margin: 0 120px 40px 120px;
+   border-top: 2px solid #A2B998;
+
+
+}
+.title{
+   margin:0 15%;
+   position: relative;
+   top: -24px;  
+   width:250px;
+}
+
+@media screen and (max-width:720px){
+   .solutions_container{
+      width:100%;      
+   }
+
+}
+@media screen and (max-width:480px){
+   .title_container{
+      margin: 0 20px 20px 20px;
+      border-left: none; 
+   }
+   .title{
+      top: -20px;  
+      width:200px;
+   }
+
+}

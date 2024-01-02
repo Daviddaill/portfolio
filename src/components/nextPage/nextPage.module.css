@@ -14,8 +14,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
  }
  
  .icon {
    animation: blink 1.5s infinite; /* 1s is the duration, "infinite" makes it loop */
+   position:relative;
+   top:-8px
  }
+
+@media screen and (max-width: 500px) {
+  .container{
+    height:150px;
+  }
+}

@@ -21,7 +21,7 @@ const theme= darkMode? CSS.dark_mode: CSS.light_mode
          <div className={`${CSS.leftContainer} ${CSS.container}`}>
             <img src={logo} alt='logo david' width="30px" height="30px"></img>
             <span className={CSS.portfolio}>PORTFOLIO</span>
-            <p className={CSS.name}>David Daillère</p>
+            <p className={`${CSS.name} primary`}>David Daillère</p>
          </div>
       {/* CONTACT */}
          <div className={`${CSS.centerContainer} ${CSS.container}`}>

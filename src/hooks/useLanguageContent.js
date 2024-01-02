@@ -21,6 +21,7 @@ export function useLanguageContent() {
   const about = language === 'fr' ? fr.about : en.about;
   const projects = language === 'fr' ? fr.projects : en.projects;
   const resume = language === 'fr' ? fr.resume : en.resume;
+  const solutions = language === 'fr' ? fr.solutions : en.solutions;
 //book content
 const pages= language === 'fr' ? pagesFr : pagesEn;
 
@@ -32,6 +33,7 @@ const pages= language === 'fr' ? pagesFr : pagesEn;
     projects,
     resume,
     language,
-    pages
+    pages,
+    solutions,
   };
 }

@@ -1,5 +1,5 @@
 table {
-   width: 100%;
+
    height: 100%;
    border-collapse: collapse;
    margin: 0;
@@ -22,9 +22,9 @@ table {
  }
  
  .nav_link {
-   font-size: 55px;
+   font-size: 40px !important;
    display: block;
-   height: 25%;
+   height: 20%;
  }
  
  .side {
@@ -42,7 +42,8 @@ table {
    border-bottom: 1px solid grey;
    border-top: 1px solid grey;
  }
- 
+
+
  .toggle {
    padding-bottom: 20px;
  }
@@ -52,10 +53,37 @@ table {
    border-top: 1px solid grey;
    vertical-align: top;
  }
+ @media screen and (max-width: 720px) {
+  
+  td {
+  width:100%;
+  }
+  
+  .mainCol {
+    height: 85%;
+  }
+  
+  .nav_link {
+    font-size: 60px !important;
+    display: block;
+    height: 20%;
+  }
+
+  .social_media {
+    margin-right:20px
+    }
+  
+}
  
  @media screen and (max-width: 400px) {
-   .nav_link {
-     font-size: 40px;
-   }
+  .nav_link {
+    font-size: 30px !important;
+  }
+  .mainCol {
+    height: 70%;
+  }
+  .social_media {
+    margin-right:15px
+    }
  }
  
