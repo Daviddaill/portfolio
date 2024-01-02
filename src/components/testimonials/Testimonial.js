@@ -1,16 +1,13 @@
 import React from 'react';
 import { ImQuotesLeft } from 'react-icons/im';
 import CSS from './testimonials.module.css';
-import { useTheme } from '../../hooks/ThemeContext';
-
  
 /*
 A single testimonial component, used by Testimonials, 
 New testimonials are automatically added from the content file by Testimonials.
 */
 const Testimonial = ({ author, content }) => {
-  const {darkMode}= useTheme();
-  const theme= darkMode? CSS.dark: CSS.light;
+
   return (
     <div className={CSS.testimonial}>
       <div className={`${CSS.testimonial_content} ${CSS.theme} `}>

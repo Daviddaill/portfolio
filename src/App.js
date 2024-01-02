@@ -7,7 +7,6 @@ import AppLayout from './AppLayout';
 import Home from './page/home/Home';
 import About from './page/about/About';
 import Projects from './page/projects/Projects';
-import Resume from './page/resume/Resume';
 //Components
 import Menu from './components/menu/menu'
 import ScrollToTop from './components/scrollTop/ScrollTop';

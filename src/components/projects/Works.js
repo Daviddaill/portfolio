@@ -5,7 +5,7 @@ import { useLanguageContent } from '../../hooks/useLanguageContent';
 import CSS from './projects.module.css'
 //Assets
 import uppaTopImg from '../../assets/images/projects/uppatop.png'
-import comingSoon from '../../assets/images/projects/coming_soon.png'
+// import comingSoon from '../../assets/images/projects/coming_soon.png'
 import gitebleu from '../../assets/images/projects/gitebleu2.png'
 import igniteImg from '../../assets/images/projects/ignite.png'
 
@@ -16,7 +16,6 @@ export default function Works({variant, className}) {
    const {  uppaTop, ignite, giteBleu } = projects.recentWork
     
    const projectsList = [
-
 
       {
          img: gitebleu ,

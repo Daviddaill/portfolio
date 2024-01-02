@@ -7,13 +7,10 @@ import resumeFr from '../../assets/cv_david_daillere.pdf'
 import resumeEn from '../../assets/resume_david_daillere.pdf'
 //Custom Hooks
 import { useLanguageContent } from '../../hooks/useLanguageContent';
-import { useTheme } from '../../hooks/ThemeContext';
 
 export default function DownloadResume({ display }) {
   const { resume, language } = useLanguageContent();
-  const {darkMode} = useTheme();
   const pdf = language === 'fr' ? resumeFr : resumeEn;
-  const themeButton= darkMode? `accent ` :  `accent `;
  
   return (
     <div className={CSS.button}>

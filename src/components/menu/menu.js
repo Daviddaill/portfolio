@@ -11,7 +11,7 @@ import Contact from '../contact/Contact';
 
 const Menu = ({ closeMenu }) => {
   const { header, language } = useLanguageContent();
-  const { home, about, projects, solutions, pricing } = header.nav;
+  const { home, about, projects, solutions } = header.nav;
 
   return (
     <table className={CSS.menu_container}>

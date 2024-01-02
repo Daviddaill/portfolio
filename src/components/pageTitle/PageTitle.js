@@ -6,7 +6,7 @@ import { useTheme } from '../../hooks/ThemeContext';
 
 export default function PageTitle({ id, className, title, subtitle, description, nav }) {
 
-   const { theme, darkMode } = useTheme();
+   const { darkMode } = useTheme();
    const themeName = darkMode ? CSS.dark_name : CSS.light_name;
 
    return (

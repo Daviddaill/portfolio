@@ -1,7 +1,7 @@
 
 import React from 'react'
 //Icons
-import { FaCalendarAlt, FaCcMastercard, FaGoogle, FaServer, FaShoppingBag } from 'react-icons/fa'
+import { FaCalendarAlt,FaGoogle, FaServer } from 'react-icons/fa'
 import { FaMobileScreen } from "react-icons/fa6";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { IoAccessibility } from "react-icons/io5";
@@ -18,7 +18,7 @@ import Col from 'react-bootstrap/Col';
 import { useLanguageContent } from '../../../hooks/useLanguageContent';
 
 export default function Expertise() {
-  const { home, language } = useLanguageContent()
+  const { home } = useLanguageContent()
   const { darkMode } = useTheme();
   const theme = darkMode ? CSS.dark : CSS.light;
 

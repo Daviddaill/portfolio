@@ -3,7 +3,6 @@ import React from 'react'
 import {DiVisualstudio, DiNetbeans } from 'react-icons/di'
 import {FaCpanel, FaWordpressSimple} from 'react-icons/fa'
 import {SiFirebase, SiGithub} from 'react-icons/si'
-import { FaCalendarAlt } from "react-icons/fa";
 //Style
 import CSS from './skillset.module.css'
 //Hooks

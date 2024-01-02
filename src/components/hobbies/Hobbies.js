@@ -16,10 +16,9 @@ import trek from '../../assets/images/hobbies/trekking.jpg'
 import stage from '../../assets/images/hobbies/lighting-stage.jpeg'
  
 export default function Hobbies() {
-   const { about, language } = useLanguageContent();
+   const { about } = useLanguageContent();
    const { darkMode } = useTheme();
    const theme = darkMode ? CSS.dark : CSS.light;
-   const title = language === 'fr' ? "Hobbies et centres d'intérêt" : 'Hobbies and Interests';
    const { trekking, surfing, photography, reading, theater } = about.hobbies;
    return (
       <div className={CSS.container}>

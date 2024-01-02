@@ -7,13 +7,10 @@ import { useLanguageContent } from '../../hooks/useLanguageContent';
 import Book from '../../components/myBook/Book';
 import TeckStack from '../../components/skillset/TeckStack';
 import ToolStack from '../../components/skillset/ToolStack';
-import Github from '../../components/github/Github';
-import NextPage from '../../components/nextPage/NextPage';
 import Hobbies from '../../components/hobbies/Hobbies';
 import Testimonials from '../../components/testimonials/Testimonials';
 import Section from '../../components/section/Section';
 //Assets
-import suits from '../../assets/images/suit.png'
 import PageTitle from '../../components/pageTitle/PageTitle';
 import SectionTitle from '../../components/sectionTitle/SectionTitle';
 import Resume from '../resume/Resume';
@@ -21,9 +18,8 @@ import Resume from '../resume/Resume';
 import { ImQuotesLeft } from 'react-icons/im';
 
 function About() {
-   const { about, language } = useLanguageContent()
+   const { about } = useLanguageContent()
    const { theme } = useTheme();
-   const projectsPage = language === 'fr' ? 'Mes Projets' : 'My Projects'
 
    return (
       <div className={`main_container ${CSS.about} ${theme}`}>

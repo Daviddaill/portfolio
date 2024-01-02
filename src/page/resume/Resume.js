@@ -11,7 +11,7 @@ import imageEn from '../../assets/resume.png'
 import imageFr from '../../assets/cv.png'
 
 function Resume() {
-   const { resume, language } = useLanguageContent()
+   const { language } = useLanguageContent()
    const { theme } = useTheme();
    const pdf = language === 'fr' ? resumeFr : resumeEn;
    const resumeImg = language === 'fr' ? imageFr : imageEn;

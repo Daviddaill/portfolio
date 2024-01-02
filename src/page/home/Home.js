@@ -11,7 +11,6 @@ import NextPage from '../../components/nextPage/NextPage';
 import Section from '../../components/section/Section';
 import Type from './Type';
 import Testimonials from '../../components/testimonials/Testimonials';
-import Hobbies from '../../components/hobbies/Hobbies';
 import Expertise from '../../components/skillset/expertise/Expertise';
 import Solutions from '../../components/solutions/Solutions';
 
@@ -36,8 +35,8 @@ function Home() {
           {/*  Top Section: End  */}
           {/*  Next Section  */}
           <Section >
-            <div className={`${CSS.img_container} ${themeMode}`} alt="portrait de David">
-              <img src={david} width="180" className={CSS.img} />
+            <div className={`${CSS.img_container} ${themeMode}`} >
+              <img src={david} width="180" className={CSS.img} alt="portrait de David" />
             </div>
                
             <div className={`width_medium ${CSS.intro_container}`}>

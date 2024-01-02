@@ -1,23 +1,20 @@
 // Style
-import CSS from './projects.module.css'
+
 //Custom Hooks
 import { useTheme } from '../../hooks/ThemeContext';
 import { useLanguageContent } from '../../hooks/useLanguageContent';
 //Components
-import Gallery from '../../components/gallery/Gallery'
 import Section from '../../components/section/Section';
 import Works from '../../components/projects/Works';
 import PersonalProjects from '../../components/projects/PersonalProjects';
 import NextPage from '../../components/nextPage/NextPage';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
-import { Carousel } from 'react-bootstrap';
 import PageTitle from '../../components/pageTitle/PageTitle';
 
 function Projects() {
    const { projects, language } = useLanguageContent()
-   const { theme, darkMode } = useTheme();
+   const { theme} = useTheme();
    const aboutPage = language === 'fr' ? 'A Propos' : 'About Me'
-   const themeName = darkMode ? CSS.dark_name : CSS.light_name;
 
    return (
       <div className={`${theme}`}>

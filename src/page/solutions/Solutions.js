@@ -6,15 +6,11 @@ import { useTheme } from '../../hooks/ThemeContext'
 import SectionTitle from '../../components/sectionTitle/SectionTitle'
 import NextPage from '../../components/nextPage/NextPage'
 import PageTitle from '../../components/pageTitle/PageTitle'
-import { Link } from 'react-router-dom'
-
 
 export default function Solutions() {
    const { solutions, language } = useLanguageContent()
-   const { theme, darkMode } = useTheme();
+   const { theme } = useTheme();
    const nextPage = language === 'fr' ? 'Projets Récents' : 'Recent Projects'
-   const themeMode = darkMode ? CSS.dark : CSS.light;
-   const themeName = darkMode ? CSS.dark_name : CSS.light_name;
    const { hotel, website, shop, custom } = solutions;
 
    const nav = [
@@ -23,7 +19,6 @@ export default function Solutions() {
       { slug: "website", name: website.title },
       { slug: "custom", name: custom.title },
    ]
-
 
    return (
       <div className={`${theme}`}>

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import ProjectCard from './ProjectCard';
 import CSS from './projects.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
@@ -12,14 +12,12 @@ import { Carousel } from 'react-bootstrap'; // Import Carousel component from re
 
 */
 const HorizontalGallery = ({ projects, className, variant,GalleryTitle }) => {
-  const containerRef = useRef(null);
  
   return (
       <div className={`${className} ${CSS.caroussel}`}>
        <h2 className={CSS.projects_title}>{GalleryTitle}</h2>
       
-      <Carousel variant={variant} as="div" >
-       
+      <Carousel variant={variant} as="div" >     
         {projects.map((project, index) => (
           <Carousel.Item className={CSS.carousel_item}>
             <ProjectCard key={index} {...project}   />
