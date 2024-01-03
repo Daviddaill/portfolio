@@ -12,7 +12,7 @@ import igniteImg from '../../assets/images/projects/ignite.png'
 export default function Works({variant, className}) {
 
    const { projects, language } = useLanguageContent()
-   const recentWork = language === 'fr' ? `Projets Professionnels ` : 'Professional Work';
+   const recentWork = language === 'fr' ? `Travaux Récents ` : 'Recent Work';
    const {  uppaTop, ignite, giteBleu } = projects.recentWork
     
    const projectsList = [

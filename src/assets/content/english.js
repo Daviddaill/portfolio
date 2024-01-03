@@ -16,7 +16,9 @@ export const en = {
       },
       resume: {
          download: 'Download CV'
-      }
+      },
+      author:"Designed and Developped by ",
+      tool: "Made with love using React",
    },
    home: {
       title: 'Front End Developer',
@@ -25,8 +27,8 @@ export const en = {
       Together, let's create the future!<br>`,
       intro: {
          title: "Freelance Web Developer:",
-         subtitle: "As a freelance web developer, I specialize in website creation and application programming. I guide you from the conceptualization to the hands-on use of your tool. My mission is to develop tailor-made solutions, whether you require a simple webpage, a complete online store, or a site for your hotel or vacation rentals.",
-         title2: "What I offer:",
+         subtitle: "As a freelance web developer, I specialize in website creation and application programming. I will guide you from the conceptualization to the hands-on use of your website. My mission is to develop tailor-made solutions, whether you require a simple webpage, a complete online store, or the integration of a booking System.",
+         title2: "What I Offer:",
          sectionTitle1: "Customized Design:",
          section1: "Together, we will create the tool that best suits your needs, taking into consideration your objectives and vision.",
          sectionTitle2: "Technical Expertise:",
@@ -45,7 +47,7 @@ export const en = {
          itemTitle4: "Responsive Design",
          itemText4: "Responsive to All Screens: Computers, Tablets, Phones.",
          itemTitle5: "Calendars",
-         itemText5: "Calendar synchronization with all your OTAs (Booking.com, Airbnb, etc.).",
+         itemText5: "Manage appointments and bookings using a synchronized calendar system with real-time availability updates.",
          itemTitle6: "Accessibility",
          itemText6: "Because everyone should be able to have access to your website, I adhere to accessibility standards for all.",
       },
@@ -65,14 +67,15 @@ export const en = {
       subtitle:"ME",
       description: "Find out about my background, my interests, as well as my experiences and certificates. Explore the different facets of my professional and personal journey.",
       hobbies: {
-         title:"hobbies",
+         title:"Hobbies",
          trekking: 'Trekking',
          photography: 'Photography',
          surfing: 'Surfing',
          reading: 'Reading',
          theater: 'Performing Art'
       },
-      book:"My Background",
+      testimonials_title:'Testimonials',
+      book:"Background",
       tools:"Skills",
       resume: "Resume",
       thanks:"Thank you for visiting my website! I look forward to learning more about your project. Do not hesitate to contact me by email or telephone. Looking forward to chatting with you!",
@@ -98,7 +101,8 @@ export const en = {
 
    },
    projects: {
-      title: 'PROJECTS',
+      title: 'Projects',
+      subtitle:'I Worked On',
       description: 'Explore my recent work to get an overview of my skills and diversity. Each project is a unique story of creativity and expertise. Find out how I turn ideas into real results.',
       recentWork: {
          uppaTop: {
@@ -174,8 +178,8 @@ export const en = {
       subtitle: 'to your Needs',
       description: "I provide a range of solutions, whether you require a website for your hotel or vacation rental, aim to sell products online, prefer a classic website, or opt for custom code. My main objective is to tailor solutions to your unique needs in the most effective manner.",
       hotel: {
-         title: "Hôtel",
-         description: "Elevate your business with an outstanding online presence through a website featuring an intuitive availability calendar and a streamlined reservation process. To simplify your business management, leverage a dedicated admin page that allows you to effortlessly oversee all your reservations. Streamline your day-to-day operations and provide your customers with a seamless and efficient booking experience.",
+         title: "Hotel Solutions",
+         description: "a website  integrated with a comprehensive booking management system. Showcase room availability, easy reservation process, and online payments. Additionally, benefit from a dedicated admin page to oversee all reservations. Synchronize your properties across various calendars and booking operators such as Airbnb, Booking.com, Google Calendar, and more.",
          section1: {
             title: "Website",
             subtitle1: "Deployment",
@@ -199,24 +203,22 @@ export const en = {
             description3: "A Channel Manager provides a centralized solution for managing all your online listings (Booking.com, Airbnb, etc.) from one place! I advise you on the different available solutions, install a new channel manager, or synchronize with the one you already have.",
             subtitle4: "Emails, Invoices & Contracts",
             description4: "Automated emails with prepared templates and automatic invoices and contracts.",
-            subtitle5: "",
-            description5: "",
+            subtitle5: "Flexible Rate Structures",
+            description5: "You can define any type of rates: discount, coupon, tax, midweek, weekend, seasons ect.",
          },
          section3: {
             title: "Payment",
             subtitle1: "Payment Gateway",
             description1: "Streamline transactions with the integration of a payment gateway directly linked to your bank account.",
-            subtitle2: "Advanced pricing",
-            description2: "You can define any type of pricing: discount, coupon, tax, midweek, weekend, seasons ect.",
-            subtitle3: "Refund",
-            description3: "Refund your customers simply in the event of cancellation.",
-            subtitle4: "Means of Payment.",
-            description4: "Different payment options (deposit or full amount) and different payment methods - online (by credit card or PayPal) or offline (bank transfer, on arrival...)",
-            subtitle5: "",
-            description5: "",
+            subtitle2: "Refunds",
+            description2: "Refund your customers simply in the event of cancellation.",
+            subtitle3: "Means of Payment.",
+            description3: "Different payment options (deposit or full amount) and different payment methods - online (by credit card or PayPal) or offline (bank transfer, on arrival...)",
+            subtitle4: "",
+            description4: "",
          },
          section4: {
-            title: "Friendly customer interface",
+            title: "Friendly Customer Interface",
             subtitle1: "Smooth Booking Process",
             description1: "Smooth booking process, from accommodation search to booking confirmation",
             subtitle2: "Options",
@@ -247,7 +249,7 @@ export const en = {
          },
          section2: {
             title: "Woo-Commerce",
-            subtitle1: "Set-up",
+            subtitle1: "Set-Up",
             description1: "Design, process, currency, tax, delivery price by region etc...",
             subtitle2: "Products Set-Up",
             description2: "Product type, description, price, variation (color, size, etc.)",
@@ -262,12 +264,12 @@ export const en = {
             title: "Payment",
             subtitle1: "Payment Gateway",
             description1: "Streamline transactions with the integration of a payment gateway directly linked to your bank account.",
-            subtitle2: "Advanced pricing",
-            description2: "Set any type of pricing: discount, coupon, tax,delivery ect.",
-            subtitle3: "Refund",
-            description3: "Refund your customers.",
-            subtitle4: "Means of Payment.",
-            description4: "Different payment options (credit card, PayPal ect).",
+            subtitle2: "Refunds",
+            description2: "Refund your customers easily.",
+            subtitle3: "Means of Payment.",
+            description3: "Different payment options (credit card, PayPal ect).",
+            subtitle4: "Flexible Rate Structures",
+            description4: "Set any type of rates: discount, coupon, tax, delivery ect.",
             subtitle5: "",
             description5: "",
          },
@@ -286,7 +288,7 @@ export const en = {
          },
       },
       website: {
-         title: "Site Internet",
+         title: "Classic Website",
          description: "I am here to create the website that suits your needs at an unbeatable price. You choose the options you require, and you can upgrade your site whenever you want.",
          section1: {
             title: "Set-Up",
@@ -301,7 +303,7 @@ export const en = {
          },
          section2: {
             title: "Design",
-            subtitle1: "Fit your Style",
+            subtitle1: "Fit Your Style",
             description1: "I am here to ensure that the style of your website aligns seamlessly with that of your brand. If you haven't established a specific style yet, we will collaboratively explore the colors, typography, and overall aesthetic that you envision.",
             subtitle2: "Responsive Design",
             description2: "Provide an outstanding user experience across all devices with a responsive design. Your site seamlessly adapts to desktop, tablet, and mobile screens.",

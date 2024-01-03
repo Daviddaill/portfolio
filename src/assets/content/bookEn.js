@@ -17,13 +17,10 @@ export const pagesEn = [
      img: 'lighting',
    },
    {
-     header: "Chapter 2: The Global Odyssey",
+     header: "Chapter 2: A New Professional Trajectory",
      text: [
-       `Fast forward to a different chapter in my life, where the course of my journey took a fascinating turn.`,
-       `My wife, a Sri Lankan citizen, and I embarked on an ambitious project in Sri Lanka.
-       The prospect of a new beginning beckoned, with a desire to promoting respectful and responsible tourism on this picturesque island.`,
-      `Unexpectedly, the world was blindsided by the pandemic. The tourism industry ground to an abrupt halt, leaving our once-promising project adrift.`,
-      ` With newfound time and a pressing need to reshape my long-term goals, a fresh professional path began to emerge`,
+       `In an unexpected turn of events, the world was blindsided by the pandemic, abruptly halting the events industry that I had been deeply immersed in for a decade.`,
+       `With the sudden pause in my role as a sound and lighting engineer, I found myself faced with newfound time and a pressing need to reassess my long-term goals.`,
      ],
      img: '',
    },

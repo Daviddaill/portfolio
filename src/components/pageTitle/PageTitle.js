@@ -6,7 +6,7 @@ import { useTheme } from '../../hooks/ThemeContext';
 
 export default function PageTitle({ id, className, title, subtitle, description, nav }) {
 
-   const { darkMode } = useTheme();
+   const { darkMode, theme } = useTheme();
    const themeName = darkMode ? CSS.dark_name : CSS.light_name;
 
    return (
@@ -22,14 +22,17 @@ export default function PageTitle({ id, className, title, subtitle, description,
          <div id={id} className={className}>
             <div className={CSS.description_container}>
                <p className={CSS.decription_text}>{description}</p>
-               {nav &&
+
+            </div>
+         </div>
+         <div className={`${CSS.nav_container} ${theme}`}>
+         {nav &&
                   <ul className={`${CSS.category_list} accent`}>
                      {nav.map(item => (
                         <li><ScrollLink to={item.slug} smooth={true} duration={500} offset={-150}>{item.name}</ScrollLink></li>
                      ))}
                   </ul>
                }
-            </div>
          </div>
       </>
    )

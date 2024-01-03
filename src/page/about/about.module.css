@@ -19,6 +19,10 @@
       max-width:400px;
       margin: 0 auto;
    }
+   .thankyou_text{
+      padding:0 40px;
+   }
+
 }
 @media screen and (max-width:400px){
    .book_container{

@@ -76,6 +76,7 @@ export const fr = {
       tools:"Compétences",
       resume: "CV",
       thanks:"Merci infiniment pour votre visite ! J'ai hâte d'en apprendre davantage sur votre projet. N'hésitez pas à me contacter par email ou téléphone. Au plaisir d'échanger avec vous !",
+      testimonials_title:'Témoignages',
       testimonials: [
          {
             author: 'Garfield Vaughn - UppaTop',

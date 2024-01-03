@@ -11,21 +11,19 @@
 }
 
 .footer{
+   padding-top:40px;
    display: flex;
    flex-wrap: wrap;
    justify-content: space-around;
-   align-items: center;
+   align-items: flex-start;
 }
 .container{
-padding:20px 50px;
-text-align: center;
+padding:20px 50px 80px 40px;
 }
 .leftContainer{
    text-align: left;
 }
-.centerContainer{
-   text-align: center;
-}
+
 
 /* Logo Section */
 .portfolio{
@@ -35,7 +33,6 @@ text-align: center;
    font-size: 16px;
 }
 .name{
- 
    font-size: 18px;
    font-weight: bold;
 }
@@ -52,6 +49,9 @@ text-align: center;
 }
 
 /* Social Media Section */
+.title{
+   padding-bottom: 20px;
+}
 .subTitle{
    font-size: 12px;
 }
@@ -63,5 +63,40 @@ text-align: center;
    align-items: baseline;
 }
 
+/* Author Section */
+.author{
+   display:flex;
+   justify-content: space-between;
+   width:100%;
+   text-align: center;
+   border-top: 1px solid #777777;
+   padding:15px 60px 0px 60px;
+}
+.tool{
+   text-align: center;
+}
 
 
+@media screen and (max-width:500px) {
+   .footer{
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+   }
+   .container{
+      padding:20px 50px 80px 40px;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      }
+      /* Author Section */
+.author{
+flex-direction: column;
+
+   text-align: center;
+
+}
+.tool{
+   text-align: center;
+}
+}

@@ -18,12 +18,11 @@ export const pagesFr = [
      img: '',
    },
    {
-     header: "Chapitre 2 : L'Odyssée",
+     header: "Chapitre 2 : Une Nouvelle Trajectoire Professionnelle",
      text: [
-       `Quelques années plus tard, nous voilà en route vers un nouveau chapitre passionnant.`,
-       `Ma femme, une citoyenne sri-lankaise, et moi avons lancé un projet touristique au Sri Lanka, avec pour objectif la promotion d'un tourisme respectueux et responsable sur cette île pittoresque.`,
-       `Alors que nous investissions toutes nos ressources, la pandémie mondiale a soudainement frappé, mettant nos rêves en suspens en même temps que les industries de l'événementiel et du tourisme se sont immobilisées.`,
-       `Cette période de temps libre forcée a été l'occasion de réfléchir à une nouvelle orientation pour ma carrière professionnelle à long terme.`,
+      `Lorsque le monde a été pris au dépourvu par la pandémie, l'industrie de l'événementiel s'est arrêtée brusquement.`,
+      ` Avec une pause soudaine dans mon rôle d'ingénieur du son et de lumières, je me suis retrouvé avec beaucoup de temps disponible et le besoin pressant de réévaluer mes objectifs à long terme. `,
+
      ],
      img: '',
    },

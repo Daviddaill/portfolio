@@ -1,7 +1,9 @@
 .iconsContainer{
    display:flex;
-   justify-content: center;
-   gap:20px
+   justify-content: flex-start;
+   align-items: flex-start;
+   gap:20px;
+   padding-left:0;
 }
 .vertical{
    flex-direction: column;
@@ -11,7 +13,7 @@
 .iconContainer{
    list-style-type: none; /* Remove bullets */
    color:#eaeaea;
-   padding:3px 6px;
+   padding:3px 0px;
    margin-top: 5px;
 }
 .iconContainer:hover {

@@ -23,7 +23,7 @@ function App() {
           <Route path=':lang' element={<Home />} />
           <Route path=':lang/home' element={<Home />} />
           <Route path=':lang/solutions' element={<Solutions />} />
-          <Route path=':lang/pricing' element={<Pricing />} />
+          {/* <Route path=':lang/pricing' element={<Pricing />} /> */}
           <Route path=':lang/projects' element={<Projects />} />
           <Route path=':lang/about' element={<About />} />
           <Route path=':lang/menu' element={<Menu />} />

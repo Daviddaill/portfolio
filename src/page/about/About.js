@@ -20,40 +20,49 @@ import { ImQuotesLeft } from 'react-icons/im';
 function About() {
    const { about } = useLanguageContent()
    const { theme } = useTheme();
+   const nav=[
+      {slug:"background", name:about.book},
+      {slug:"skills", name:about.tools},
+      {slug:"hobbies", name:about.hobbies.title},
+      {slug:"resume", name:about.resume},
+      {slug:"testimonials", name:about.testimonials_title},
+   ]
 
    return (
       <div className={`main_container ${CSS.about} ${theme}`}>
          <PageTitle
             title={about.title}
             subtitle={about.subtitle}
-            description={about.description} />
+            description={about.description}
+            nav={nav}
+             />
          {/*  Top Section  */}
 
          {/*  Top Section: End */}
 
-         <Section>
-            <SectionTitle title={about.book} color="primary" bg_color={theme} />
+         <Section id="background">
+            <SectionTitle title={about.book}  color="primary" bg_color={theme} />
             <div className={CSS.book_container}>
                <Book />
             </div>
          </Section>
 
-         <Section>
+         <Section id="skills">
             <SectionTitle title={about.tools} color="primary" bg_color={theme} />
             <TeckStack />
             <ToolStack />
          </Section>
 
-         <Section>
+         <Section id="hobbies">
             <SectionTitle title={about.hobbies.title} color="primary" bg_color={theme} />
             <Hobbies />
          </Section>
-         <Section>
+         <Section id="resume">
          <SectionTitle title={about.resume} color="primary" bg_color={theme} />
             <Resume />
          </Section>
 
-         <Section>
+         <Section id="testimonials">
             <Testimonials />
          </Section>
 

@@ -13,7 +13,7 @@ import giteImg from '../../assets/images/projects/gite.png'
 export default function PersonalProjects({variant, className}) {
 
    const { projects, language } = useLanguageContent()
-   const myProjects = language === 'fr' ? `Projets Personnels` : 'Personal Work';
+   const myProjects = language === 'fr' ? `Projets Personnels` : 'Personal Projects';
    const { booking, gite, reddit, pho } = projects.projects
     
    const projectsList = [

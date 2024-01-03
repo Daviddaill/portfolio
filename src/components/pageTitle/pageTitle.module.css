@@ -53,12 +53,18 @@
 }
 
 .category_list {
-   position: sticky;
-   width: 100%;
-   margin: 40px 0;
+   max-width: 850px;
+   margin: 0px auto;
+   padding:20px 0;
    display: flex;
    gap: 40px;
    justify-content: space-evenly;
+}
+.nav_container{
+   margin:0 auto;
+   position:sticky;
+   top:45px;
+   z-index:10;
 }
 
 @media screen and (max-width:720px) {
@@ -91,10 +97,14 @@
    .decription_text {
       font-size: 16px;
    }
+   .nav_container{
+      width:100%;
+      margin:0 auto;
+      position:static;
+
+   }
    .category_list {
-      position: sticky;
-      width: 100%;
-      margin: 20px 0;
+      margin: 0px 40px;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;

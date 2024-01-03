@@ -39,9 +39,9 @@ export default function Solutions() {
                to={`/${language}/solutions#hotel`}
                onClick={scrollToSection('hotel')}>
                <BiSolidHotel className={`primary ${CSS.icon}`} size='80px' />
-               <h4 className={`primary small_title`}>{title1}</h4>
+               <h4 className={`primary small_title`}>{title3}</h4>
                <p className={`color5`}>
-                  {text1}
+                  {text3}
                </p>
             </Link>
             <Link 
@@ -60,9 +60,9 @@ export default function Solutions() {
             onClick={scrollToSection('website')}>
 
                <MdOutlineWebAsset className={`secondary ${CSS.icon}`} size='80px' />
-               <h4 className={`secondary small_title`}> {title3}</h4>
+               <h4 className={`secondary small_title`}> {title1}</h4>
                <p className={`secondary`}>
-                  {text3}
+                  {text1}
                </p>
             </Link>
             <Link 
