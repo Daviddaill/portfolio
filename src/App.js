@@ -11,7 +11,7 @@ import Projects from './page/projects/Projects';
 import Menu from './components/menu/menu'
 import ScrollToTop from './components/scrollTop/ScrollTop';
 import Solutions from './page/solutions/Solutions';
-import Pricing from './page/pricing/Pricing';
+// import Pricing from './page/pricing/Pricing';
  
 function App() {
   return (

@@ -24,7 +24,7 @@ export const fr = {
       `,
       intro: {
          title: "Je construis votre site internet:",
-         subtitle: "En tant que développeur web freelance, je suis spécialisé dans la création de sites internet et la programmation d'applications. Je vous accompagne de la conception à la prise en main de votre outil. Ma mission est de créer des solutions sur mesure, que vous ayez besoin d'une simple page internet, d'un magasin en ligne complet ou d'un site avec un système de réservation pour vos gîtes ect...",
+         subtitle: "En tant que développeur web indépendant, je me spécialise dans la conception de sites internet et la programmation d'applications. Je vous guide tout au long du processus, de la phase de conception à la prise en main de votre outil. Ma mission consiste à élaborer des solutions personnalisées, que vous souhaitiez une page internet simple, une boutique en ligne complète, ou une solution pour gérer vos rendez-vous et réservations, etc.",
          title2: "Ce que je propose:",
          sectionTitle1: "Conception Personnalisée:",
          section1: "Ensemble, nous créerons l'outil le plus adapté à vos besoins, en tenant compte de vos objectifs et de votre vision.",
@@ -45,7 +45,7 @@ export const fr = {
          itemTitle4: "Design Adaptatif",
          itemText4: "Adaptation à tous les écrans: Ordinateurs, tablettes, téléphones.",
          itemTitle5: "Calendriers",
-         itemText5: "Synchronisation de vos calendriers avec toutes vos annonces en ligne (Booking.com, Airbnb, etc.).",
+         itemText5: "Calendrier de disponibilité pour vos rendez-vous ou réservations, avec synchronisation possible avec vos autres calendriers ou annonces en ligne.",
          itemTitle6: "Accessibilité",
          itemText6: "Parce que tout le monde devrait avoir accès à votre site, je respecte les normes d'accessibilité pour tous",
       },
@@ -356,8 +356,8 @@ export const fr = {
          },
          section3: {
             title: "Contactez-Moi",
-            subtitle1: "",
-            description1: "Si vous avez un projet en tête, n'hésitez pas à me contacter. Je suis ouvert à discuter de vos idées, de vos besoins et à trouver la meilleure solution pour concrétiser votre vision sur le web.",
+            subtitle1: "Si vous avez un projet en tête, n'hésitez pas à me contacter. Je suis ouvert à discuter de vos idées, à comprendre vos besoins et à trouver la meilleure solution pour donner vie à votre vision.",
+            description1: "",
             subtitle2: "",
             description2: "",
             subtitle3: "",
