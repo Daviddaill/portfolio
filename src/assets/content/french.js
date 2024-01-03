@@ -14,6 +14,8 @@ export const fr = {
          title: 'RÉSEAUX SOCIAUX',
          subtitle: 'Connectons-nous pour créer ensemble'
       },
+      author:"Conçu et développé par",
+      tool: "Réalisé avec ❤ - En utilisant React",
 
    },
    home: {
@@ -124,7 +126,7 @@ export const fr = {
          giteBleu: {
             company: 'Ô Gîte Bleu',
             title: 'Location de vacances',
-            text: `un site internet de localisation de 2 Gîtes, avec une plateforme de gestion des réservations pour gérer les locations facilement `,
+            text: `Un site internet pour la location de 2 Gîtes, avec une plateforme de gestion des réservations pour gérer les locations facilement `,
             features: [
                'Site internet et référencement multilingue',
                'Calendrier de disponibilité.',

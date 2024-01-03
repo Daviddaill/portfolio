@@ -18,7 +18,7 @@ export const en = {
          download: 'Download CV'
       },
       author:"Designed and Developped by ",
-      tool: "Made with love using React",
+      tool: "Made with ❤ using React",
    },
    home: {
       title: 'Front End Developer',
