@@ -21,7 +21,7 @@ export const en = {
       tool: "Made with ❤ using React",
    },
    home: {
-      title: 'Front End Developer',
+      title: 'Web Developer',
       description: `Welcome to my creative digital space!<br>
       Feel free to browse, be inspired, and get in touch.<br>
       Together, let's create the future!<br>`,
