@@ -37,6 +37,7 @@
 .box_title{
    margin-bottom: 40px;
    text-align: center;
+   font-size: 20px;
 }
 .box_content_title{
    font-size: 18px;
@@ -64,6 +65,12 @@
    .box{
       padding:20px;
       width:100%;
+   }
+   .box_title{
+      font-size: 18px;
+   }
+   .box_content_title{
+      font-size: 16px;
    }
    .section_description{
       padding: 0 20px;
