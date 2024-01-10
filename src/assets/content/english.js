@@ -21,6 +21,10 @@ export const en = {
       tool: "Made with ❤ using React",
    },
    home: {
+      meta:{
+         title:"David Daillère - Web Developer",
+         description:"Freelance Web Developer specializing in custom code (HTML, CSS, JavaScript, React, etc.) and comprehensive WordPress solutions. Whether you require a website for booking management, an online shop, a simple business page, or a more complex application, I'm here to bring your project to life. Let's turn your ideas into a digital reality! 💻🚀 #WebDevelopment #Freelancer #CodingExpert",
+      },
       title: 'WEB DEVELOPER',
       description: `Welcome to my creative digital space!<br>
       Feel free to browse, be inspired, and get in touch.<br>
@@ -174,6 +178,10 @@ export const en = {
       download: 'Download Resume'
    },
    solutions: {
+      meta:{
+         title:"Building and Designing Your Website",
+         description:"Affordable solutions for your website: online payment system, channel manager, calendar synchronization, e-commerce, professional page, and much more. Opt for features tailored to your specific needs. Transform your online presence. 💻🌐 #WebSolutions #ECommerce #OnlineManagement",
+      },
       title: 'Solutions',
       subtitle: 'to your Needs',
       description: "I provide a range of solutions, whether you require a website for your hotel or vacation rental, aim to sell products online, prefer a classic website, or opt for custom code. My main objective is to tailor solutions to your unique needs in the most effective manner.",

@@ -19,6 +19,10 @@ export const fr = {
 
    },
    home: {
+      meta:{
+         title:"David Daillère - Développeur web",
+         description:"Développeur Web indépendant spécialisé en front-end (HTML, CSS, JavaScript, React, etc.) et en solutions complètes avec WordPress. Besoin d'un site pour gérer vos réservations, d'une boutique en ligne, d'une page entreprise simple, ou d'une application plus complexe ? Je suis là pour concrétiser votre projet. Transformons vos idées en réalité numérique ! 💻🚀 #DéveloppementWeb #Freelance #ExpertEnCodage",
+      },
       title: 'DÉVELOPPEUR WEB',
       description: `Bienvenue dans mon espace numérique créatif ! <br>
       N'hésitez pas à naviguer, à vous inspirer et à entrer en contact.<br>
@@ -173,6 +177,10 @@ export const fr = {
       download: 'Télécharger CV'
    },
    solutions: {
+      meta:{
+         title:"Conception de Votre Site Internet ou Application - David Daillère",
+         description:"Solutions sur mesure et à petit prix pour votre site internet: système de paiement en ligne, channel manager, synchronisation de calendrier, e-commerce, page professionnelle, et bien plus encore. Optez pour des fonctionnalités adaptées à vos besoins spécifiques. Transformez votre présence en ligne avec mes services personnalisés. 💻🌐 #WebSolutions #ECommerce #OnlineManagement",
+      },
       title: 'Solutions ',
       subtitle: 'Sur Mesure',
       description: 'Je propose différentes solutions, que ce soit pour votre hôtel ou vos locations saisonnières, la vente en ligne de vos produits, un site internet classique pour votre entreprise, association ou blog, ou des codes personnalisés. Mon objectif premier est de répondre de manière optimale à vos besoins uniques.',

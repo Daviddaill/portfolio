@@ -6,6 +6,7 @@ import { useTheme } from '../../hooks/ThemeContext'
 import SectionTitle from '../../components/sectionTitle/SectionTitle'
 import NextPage from '../../components/nextPage/NextPage'
 import PageTitle from '../../components/pageTitle/PageTitle'
+import { Helmet } from 'react-helmet'
 
 export default function Solutions() {
    const { solutions, language } = useLanguageContent()
@@ -19,9 +20,14 @@ export default function Solutions() {
       { slug: "hotel", name: hotel.title },
       { slug: "code", name: custom.title },
    ]
+   const {title, description}= solutions.meta;
 
    return (
       <div className={`${theme} `}>
+         <Helmet>
+            <title>{title} </title>
+            <meta name="description" content={description}></meta>
+         </Helmet>
          <PageTitle
             title={solutions.title}
             subtitle={solutions.subtitle}

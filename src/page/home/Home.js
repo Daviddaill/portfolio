@@ -13,15 +13,21 @@ import Type from './Type';
 import Testimonials from '../../components/testimonials/Testimonials';
 import Expertise from '../../components/skillset/expertise/Expertise';
 import Solutions from '../../components/solutions/Solutions';
+import { Helmet } from 'react-helmet';
 
 function Home() {
    const { home, language } = useLanguageContent()
    const { theme, darkMode } = useTheme();
    const nextPage = language === 'fr' ? 'Solutions' : 'Solutions'
    const themeMode = darkMode ? CSS.dark : CSS.light;
+   const {title, description}= home.meta;
    
    return (
       <div className={`${CSS.home} ${theme}`}>
+         <Helmet>
+            <title>{title}</title>
+            <meta name="description" content={description}></meta>
+         </Helmet>
          {/*  Top Section  */}
          <div className='intro_container'>
             <div className={CSS.nameContainer}>
