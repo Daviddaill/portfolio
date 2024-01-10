@@ -21,7 +21,7 @@ export default function Solutions() {
    ]
 
    return (
-      <div className={`${theme}`}>
+      <div className={`${theme} `}>
          <PageTitle
             title={solutions.title}
             subtitle={solutions.subtitle}

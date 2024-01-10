@@ -31,9 +31,9 @@ export default function Solutions() {
    };
 
    return (
-      <>
+      <div className={`${CSS.component_container}`}>
          <SectionTitle title="Solutions" color="primary" bg_color={theme} />
-         <div className={CSS.solutions_container}>
+         <div className={`${CSS.box_container}`}>
             <Link
                className={`${CSS.box} bg_color2`}
                to={`/${language}/solutions#hotel`}
@@ -77,7 +77,7 @@ export default function Solutions() {
             </Link>
 
          </div>
-      </>
+      </div>
 
 
    )
