@@ -71,8 +71,14 @@ function Header() {
          {/* LOGO */}
          <div className={CSS.nav_bar}>
             <div className={CSS.logoContainer}>
-               <img src={logo} alt='logo David' width='25' height='25'></img>
+            <NavLink
+                  to={`${language}/home`}
+                  // className={({ isActive }) => isActive ? `${CSS.isActive} ` : CSS.isInactive}
+                  >
+                  <img src={logo} alt='logo David' width='25' height='25'></img>
                <h1 className={CSS.name}> </h1>
+               </NavLink>
+               
             </div>
             {/* NAV BAR ****BIG SCREEN*** */}
             <nav className={CSS.nav}>

@@ -373,8 +373,8 @@ export const en = {
          },
          section3: {
             title: "Contact Me",
-            subtitle1: "If you have a project in mind, feel free to reach out. I'm open to discussing your ideas, understanding your needs, and finding the best solution to bring your vision to life on the web.",
-            description1: "",
+            subtitle1: "",
+            description1: "If you have a project in mind, feel free to reach out. I'm open to discussing your ideas, understanding your needs, and finding the best solution to bring your vision to life on the web.",
             subtitle2: "",
             description2: "",
             subtitle3: "",

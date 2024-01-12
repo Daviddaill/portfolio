@@ -15,7 +15,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useLanguageContent } from '../../hooks/useLanguageContent';
 import { useTheme } from '../../hooks/ThemeContext';
 import SectionTitle from '../sectionTitle/SectionTitle';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
+// import { Link } from 'react-router-dom';
 
 
 export default function Solutions() {
@@ -23,41 +24,17 @@ export default function Solutions() {
    const { darkMode } = useTheme();
    const theme = darkMode ? CSS.dark : CSS.light;
    const { title1, text1, title2, text2, title3, text3, title4, text4 } = home.solutions
-   const scrollToSection = (id) => {
-      const section = document.getElementById(id);
-      if (section) {
-         section.scrollIntoView({ behavior: 'smooth' });
-      }
-   };
+
 
    return (
       <div className={`${CSS.component_container}`}>
          <SectionTitle title="Solutions" color="primary" bg_color={theme} />
          <div className={`${CSS.box_container}`}>
-            <Link
-               className={`${CSS.box} bg_color2`}
-               to={`/${language}/solutions#hotel`}
-               onClick={scrollToSection('hotel')}>
-               <BiSolidHotel className={`primary ${CSS.icon}`} size='80px' />
-               <h4 className={`primary small_title`}>{title3}</h4>
-               <p className={`color5`}>
-                  {text3}
-               </p>
-            </Link>
-            <Link 
-            className={`${CSS.box} bg_color1 `} 
-            onClick={scrollToSection('shop')}
-            to={`/${language}/solutions#shop`}>
-               <FaBagShopping className={`secondary ${CSS.icon}`} size='80px' />
-               <h4 className={`secondary small_title`}> {title2}</h4>
-               <p className={`color5`}>
-                  {text2}
-               </p>
-            </Link>
-            <Link 
+         <Link 
             className={`${CSS.box} bg_color3`} 
-            to={`/${language}/solutions#website`}
-            onClick={scrollToSection('website')}>
+            smooth to={`/${language}/solutions#website`}
+            offset={-150}
+            >
 
                <MdOutlineWebAsset className={`secondary ${CSS.icon}`} size='80px' />
                <h4 className={`secondary small_title`}> {title1}</h4>
@@ -66,9 +43,30 @@ export default function Solutions() {
                </p>
             </Link>
             <Link 
+            className={`${CSS.box} bg_color1 `} 
+            smooth to={`/${language}/solutions#shop`}
+            offset={250}>
+               <FaBagShopping className={`secondary ${CSS.icon}`} size='80px' />
+               <h4 className={`secondary small_title`}> {title2}</h4>
+               <p className={`color5`}>
+                  {text2}
+               </p>
+            </Link>
+            <Link
+               className={`${CSS.box} bg_color2`}
+               to={`/${language}/solutions#hotel`}
+               // onClick={scrollToSection('hotel')}
+               offset={-150}>
+               <BiSolidHotel className={`primary ${CSS.icon}`} size='80px' />
+               <h4 className={`primary small_title`}>{title3}</h4>
+               <p className={`color5`}>
+                  {text3}
+               </p>
+            </Link>
+            <Link 
             className={`${CSS.box} bg_color2`} 
-            to={`/${language}/solutions#custom`}
-            onClick={scrollToSection('custom')}>
+            smooth to={`/${language}/solutions#custom`}
+            offset={250}>
                <FaFileCode className={`tertiary ${CSS.icon}`} size='80px' />
                <h4 className={`tertiary small_title`}> {title4}</h4>
                <p className={`color5`}>

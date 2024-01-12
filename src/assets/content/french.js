@@ -366,8 +366,8 @@ export const fr = {
          },
          section3: {
             title: "Contactez-Moi",
-            subtitle1: "Si vous avez un projet en tête, n'hésitez pas à me contacter. Je suis ouvert à discuter de vos idées, à comprendre vos besoins et à trouver la meilleure solution pour donner vie à votre vision.",
-            description1: "",
+            subtitle1: "",
+            description1: "Si vous avez un projet en tête, n'hésitez pas à me contacter. Je suis ouvert à discuter de vos idées, à comprendre vos besoins et à trouver la meilleure solution pour donner vie à votre vision.",
             subtitle2: "",
             description2: "",
             subtitle3: "",
