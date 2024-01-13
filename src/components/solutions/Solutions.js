@@ -54,7 +54,7 @@ export default function Solutions() {
             </Link>
             <Link
                className={`${CSS.box} bg_color2`}
-               to={`/${language}/solutions#hotel`}
+               smooth to={`/${language}/solutions#hotel`}
                // onClick={scrollToSection('hotel')}
                offset={-150}>
                <BiSolidHotel className={`primary ${CSS.icon}`} size='80px' />
@@ -65,8 +65,8 @@ export default function Solutions() {
             </Link>
             <Link 
             className={`${CSS.box} bg_color2`} 
-            smooth to={`/${language}/solutions#custom`}
-            offset={250}>
+            smooth to={`/${language}/solutions#code`}
+            offset={-150}>
                <FaFileCode className={`tertiary ${CSS.icon}`} size='80px' />
                <h4 className={`tertiary small_title`}> {title4}</h4>
                <p className={`color5`}>

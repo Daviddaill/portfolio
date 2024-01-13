@@ -1,9 +1,7 @@
 import React from 'react'
-import CSS from "./solution.module.css"
 import Section from '../../components/section/Section'
 import { useLanguageContent } from '../../hooks/useLanguageContent'
 import { useTheme } from '../../hooks/ThemeContext'
-import SectionTitle from '../../components/sectionTitle/SectionTitle'
 import NextPage from '../../components/nextPage/NextPage'
 import PageTitle from '../../components/pageTitle/PageTitle'
 import { Helmet } from 'react-helmet'

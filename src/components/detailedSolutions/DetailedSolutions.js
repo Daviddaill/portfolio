@@ -8,22 +8,14 @@ import { useLanguageContent } from '../../hooks/useLanguageContent'
 import { useTheme } from '../../hooks/ThemeContext'
 
 
-
 export default function DetailedSolutions() {
-   const { solutions, language } = useLanguageContent()
+   const { solutions } = useLanguageContent()
    const { theme } = useTheme();
    const { hotel, website, shop, custom } = solutions;
 
-   const nav = [
-      { slug: "website", name: website.title },
-      { slug: "shop", name: shop.title },
-      { slug: "hotel", name: hotel.title },
-      { slug: "code", name: custom.title },
-   ]
-
-  return (
-    <div>
-        <Section id="website"  >
+   return (
+      <div>
+         <Section id="website"  >
             <SectionTitle title={website.title} color="primary" bg_color={theme}> </SectionTitle>
             <p className={` ${CSS.section_description}`}>{website.description}</p>
             <div className={CSS.box_container}>
@@ -429,6 +421,6 @@ export default function DetailedSolutions() {
                </div>
             </div>
          </Section>
-    </div>
-  )
+      </div>
+   )
 }
