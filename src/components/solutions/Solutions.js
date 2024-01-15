@@ -31,15 +31,15 @@ export default function Solutions() {
          <SectionTitle title="Solutions" color="primary" bg_color={theme} />
          <div className={`${CSS.box_container}`}>
          <Link 
-            className={`${CSS.box} bg_color3`} 
+            className={`${CSS.box} bg_color2`} 
             smooth to={`/${language}/solutions#website`}
             offset={-150}
             >
 
-               <MdOutlineWebAsset className={`secondary ${CSS.icon}`} size='80px' />
-               <h4 className={`secondary small_title`}> {title1}</h4>
-               <p className={`secondary`}>
-                  {text1}
+               <MdOutlineWebAsset className={`primary ${CSS.icon}`} size='80px' />
+               <h4 className={`primary small_title`}> {title3}</h4>
+               <p className={`medium_text color5`}>
+                  {text3}
                </p>
             </Link>
             <Link 
@@ -48,19 +48,19 @@ export default function Solutions() {
             offset={250}>
                <FaBagShopping className={`secondary ${CSS.icon}`} size='80px' />
                <h4 className={`secondary small_title`}> {title2}</h4>
-               <p className={`color5`}>
+               <p className={`medium_text color5`}>
                   {text2}
                </p>
             </Link>
             <Link
-               className={`${CSS.box} bg_color2`}
+               className={`${CSS.box} bg_color1`}
                smooth to={`/${language}/solutions#hotel`}
                // onClick={scrollToSection('hotel')}
                offset={-150}>
-               <BiSolidHotel className={`primary ${CSS.icon}`} size='80px' />
-               <h4 className={`primary small_title`}>{title3}</h4>
-               <p className={`color5`}>
-                  {text3}
+               <BiSolidHotel className={`secondary ${CSS.icon}`} size='80px' />
+               <h4 className={`secondary small_title`}>{title1}</h4>
+               <p className={`medium_text color5`}>
+                  {text1}
                </p>
             </Link>
             <Link 
@@ -69,7 +69,7 @@ export default function Solutions() {
             offset={-150}>
                <FaFileCode className={`tertiary ${CSS.icon}`} size='80px' />
                <h4 className={`tertiary small_title`}> {title4}</h4>
-               <p className={`color5`}>
+               <p className={`medium_text color5`}>
                   {text4}
                </p>
             </Link>
