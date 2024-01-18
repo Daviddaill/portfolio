@@ -22,7 +22,7 @@ export default function Testimonials() {
       <Carousel className={CSS.carousel} >
 
       {testimonials.map((testimonial, idx) =>(
-             <Carousel.Item className={CSS.carousel_item} >
+             <Carousel.Item className={CSS.carousel_item} interval={15000} >
               <div className={`carousel-content ${CSS.carousel_item_container}`}>
              <Testimonial key={idx} author={testimonial.author} content={testimonial.content}/>
              </div>

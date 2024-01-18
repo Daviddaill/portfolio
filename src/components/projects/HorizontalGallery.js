@@ -17,9 +17,9 @@ const HorizontalGallery = ({ projects, className, variant,GalleryTitle }) => {
       <div className={`${className} ${CSS.caroussel}`}>
        <h2 className={CSS.projects_title}>{GalleryTitle}</h2>
       
-      <Carousel variant={variant} as="div" >     
+      <Carousel variant={variant} as="div" pause="hover" wrap="true" >     
         {projects.map((project, index) => (
-          <Carousel.Item className={CSS.carousel_item}>
+          <Carousel.Item className={CSS.carousel_item} interval={10000}>
             <ProjectCard key={index} {...project}   />
           </Carousel.Item> 
         )

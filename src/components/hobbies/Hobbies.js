@@ -14,6 +14,7 @@ import surf from '../../assets/images/hobbies/surf1.jpg'
 import fun from '../../assets/images/hobbies/fun.jpg'
 import trek from '../../assets/images/hobbies/trekking.jpg'
 import stage from '../../assets/images/hobbies/lighting-stage.jpeg'
+import full from '../../assets/images/hobbies/david-full.png'
  
 export default function Hobbies() {
    const { about } = useLanguageContent();
@@ -50,7 +51,7 @@ export default function Hobbies() {
                <img src={stage} className={`${CSS.img3} ${CSS.img}`} width='100%' alt='Concert event'/>
             </div>
             <div className={CSS.column}>
-               <img src={trek} className={`${CSS.img4} ${CSS.img}`} width='100%' alt='lake in the Alps'/>
+               <img src={full} className={`${CSS.img4} ${CSS.img}`} width='100%' alt='lake in the Alps'/>
             </div>
          </div>
 

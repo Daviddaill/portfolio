@@ -7,7 +7,7 @@ const BootstrapCarousel = () => {
     <Carousel>
       
      
-      <Carousel.Item>
+      <Carousel.Item >
         <img
           className="d-block w-100"
           src="https://via.placeholder.com/800x400"
