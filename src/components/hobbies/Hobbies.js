@@ -12,7 +12,6 @@ import { useTheme } from '../../hooks/ThemeContext'
 import photo from '../../assets/images/hobbies/hobbie-photo.jpg'
 import surf from '../../assets/images/hobbies/surf1.jpg'
 import fun from '../../assets/images/hobbies/fun.jpg'
-import trek from '../../assets/images/hobbies/trekking.jpg'
 import stage from '../../assets/images/hobbies/lighting-stage.jpeg'
 import full from '../../assets/images/hobbies/david-full.png'
  
