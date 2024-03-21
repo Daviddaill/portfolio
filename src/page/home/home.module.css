@@ -1,14 +1,28 @@
 /* PARENT CONTANER */
 .home {
   width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Ensures the background covers the entire viewport */
+  overflow-x: hidden; /* Hide horizontal scrollbar if necessary */ 
+  transition: background-image 2s ease; /* Smooth transition for background image */
 }
+.homeDark{
+  background-image: url('../../assets/images/home/background-dark.png');
+  transition: background-image 2s ease; /* Smooth transition for background image */
+}
+.homeLight{
+  background-image: url('../../assets/images/home/background.png');
+  transition: background-image 2s ease; /* Smooth transition for background image */
+}
+
 /* COLOR THEME */
 .dark{
   background-color: #392E3A;
   transition: background-color 1s, color 1s;
  }
  .light {
- background-color: rgb(255, 250, 250);
+ background-color: #FEFAFF;
  transition: background-color 1s, color 1s;
  }
 
@@ -146,3 +160,4 @@
 
 
 }
+

@@ -5,6 +5,8 @@ import { useLanguageContent } from '../../hooks/useLanguageContent';
 import { useTheme } from '../../hooks/ThemeContext';
 //media
 import david from '../../assets/images/home/portrait-david.png'
+import background from '../../assets/images/home/background.png'
+import backgroundDark from '../../assets/images/home/background-dark.png'
 //Component
 
 import NextPage from '../../components/nextPage/NextPage';
@@ -15,15 +17,21 @@ import Expertise from '../../components/skillset/expertise/Expertise';
 import Solutions from '../../components/solutions/Solutions';
 import { Helmet } from 'react-helmet';
 
+
 function Home() {
    const { home, language } = useLanguageContent()
    const { theme, darkMode } = useTheme();
    const nextPage = language === 'fr' ? 'Solutions' : 'Solutions'
    const themeMode = darkMode ? CSS.dark : CSS.light;
-   const {title, description}= home.meta;
-   
+   const homeTheme= darkMode ? CSS.homeDark : CSS.homeLight
+   const { title, description } = home.meta;
+
+
+
+
+
    return (
-      <div className={`${CSS.home} ${theme}`}>
+      <div className={`${CSS.home} ${theme} ${homeTheme}`} >
          <Helmet>
             <title>{title}</title>
             <meta name="description" content={description}></meta>
@@ -38,31 +46,31 @@ function Home() {
                <Type className={`${CSS.type} ${themeMode} typewritter`} />
             </div>
          </div>
-          {/*  Top Section: End  */}
-          {/*  Next Section  */}
-          <Section >
+         {/*  Top Section: End  */}
+         {/*  Next Section  */}
+         <Section >
             <div className={`${CSS.img_container} ${themeMode}`} >
-              <img src={david} width="180" className={CSS.img} alt="portrait de David" />
+               <img src={david} width="180" className={CSS.img} alt="portrait de David" />
             </div>
-               
+
             <div className={`width_medium ${CSS.intro_container}`}>
-            <h2 className={`primary ${CSS.introTitle} `} >{home.intro.title} </h2>
+               <h2 className={`primary ${CSS.introTitle} `} >{home.intro.title} </h2>
                <p className={CSS.intro_description}>{home.intro.subtitle}</p>
                <h3 className={`${CSS.intro_subtitle} primary`}>{home.intro.title2}</h3>
                <ul>
-                  <li><b>{home.intro.sectionTitle1}</b> 
-                  <p>{home.intro.section1}</p></li>
-                  <li><b>{home.intro.sectionTitle2}</b> 
-                  <p>{home.intro.section2}</p></li>
-                  <li><b>{home.intro.sectionTitle3}</b> 
-                  <p>{home.intro.section3}</p></li>
+                  <li><b>{home.intro.sectionTitle1}</b>
+                     <p>{home.intro.section1}</p></li>
+                  <li><b>{home.intro.sectionTitle2}</b>
+                     <p>{home.intro.section2}</p></li>
+                  <li><b>{home.intro.sectionTitle3}</b>
+                     <p>{home.intro.section3}</p></li>
                </ul>
             </div>
-               
-          </Section>
-          <Section>
-            <Expertise/>
-          </Section>
+
+         </Section>
+         <Section>
+            <Expertise />
+         </Section>
          <Section>
             <Testimonials />
          </Section>
@@ -71,7 +79,7 @@ function Home() {
          </Section>
          <Section>
             <NextPage link='solutions' pageName={nextPage} />
-            
+
          </Section>
          {/*  Next Section: End  */}
       </div>
