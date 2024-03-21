@@ -5,10 +5,8 @@ import { useLanguageContent } from '../../hooks/useLanguageContent';
 import { useTheme } from '../../hooks/ThemeContext';
 //media
 import david from '../../assets/images/home/portrait-david.png'
-import background from '../../assets/images/home/background.png'
-import backgroundDark from '../../assets/images/home/background-dark.png'
-//Component
 
+//Component
 import NextPage from '../../components/nextPage/NextPage';
 import Section from '../../components/section/Section';
 import Type from './Type';
